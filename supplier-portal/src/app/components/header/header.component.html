@@ -1,0 +1,41 @@
+<p style="    margin-bottom: 0px;" class="p-class">
+    <mat-toolbar style="background: #fff;">
+
+        <div fxLayout="row" fxLayoutAlign="space-between center" class="header-cont">
+            <div fxLayout="row" fxLayoutAlign="flex-start center"><img src="assets\logo-s.png" alt=""
+                    style="width: 140px;" />
+
+
+            </div>
+
+            <div fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap="25px">
+                <app-global-search></app-global-search>
+                <div style="padding-top: 15px;"> <app-notification></app-notification></div>
+
+
+
+                <button mat-icon-button color="primary" [matMenuTriggerFor]="menu" style="width: 80px;
+                  color: #333;border-radius: 5%;">
+                    <div style="display:flex;text-transform:capitalize ;">
+                        <div> <img src="assets\user-name.svg" alt="" /></div>
+                        <div>{{value}}</div>
+                    </div>
+
+                </button>
+            </div>
+
+
+            <mat-menu #menu="matMenu">
+                <button mat-menu-item routerLink="applicantdetails"> <mat-icon>person</mat-icon>
+                    <span>Profile</span></button>
+                <button mat-menu-item routerLink="/login"> <mat-icon>logout</mat-icon>
+                    <span>Logout</span></button>
+            </mat-menu>
+
+
+        </div>
+
+
+
+    </mat-toolbar>
+</p>

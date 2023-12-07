@@ -1,0 +1,16 @@
+<mat-sidenav #sidenav class="example-sidenav" mode="side" opened="true" (mouseenter)="mouseenter()"
+  (mouseleave)="mouseleave()">
+  <div class="sub-side">
+    <mat-nav-list>
+      <mat-list-item [routerLink]="item.menuItemUrl" routerLinkActive="activebutton" class="parent"
+        *ngFor="let item of menuItems">
+        <img src="{{item.menuItemIcon}}" alt="" class="img-st" />
+        <span class="full-width" *ngIf="isExpanded || isShowing">{{item.menuItemDisplayName}}</span>
+      </mat-list-item>
+
+    </mat-nav-list>
+    <mat-nav-list>
+    </mat-nav-list>
+
+  </div>
+</mat-sidenav>

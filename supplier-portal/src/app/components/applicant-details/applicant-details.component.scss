@@ -1,0 +1,29 @@
+.main-row{
+    display: flex;
+    flex-direction: row;
+    gap: 18px;
+    justify-content: space-between;
+  
+}
+.common-struc{
+    label{
+        padding-bottom: 10px;
+    font-size: 13px;
+    font-weight: 300;
+    }
+    .applicant-details-text{
+        color: #000;
+        font-size: 13px;
+        line-height: 18px;
+        font-weight: 400;
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+}
+.main-row-sub{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.example-card{
+    margin-bottom: 10px;
+}

@@ -1,0 +1,38 @@
+<h3 mat-dialog-title fxLayout="row" fxLayoutAlign="space-between center">
+    <div>Add User</div>
+    <div style="cursor: pointer;" (click)="close()">X</div>
+</h3>
+<div mat-dialog-content>
+    <mat-card class="example-card signup-page ">
+        <mat-card-content>
+
+            <div fxLayout="column" fxLayoutAlign="flex-start">
+
+                <div fxLayout="row" fxLayoutGap="10">
+                    <mat-form-field appearance="outline">
+                        <mat-label>First Name</mat-label>
+                        <input matInput placeholder="First Name" type="text">
+
+
+                    </mat-form-field>
+                    <mat-form-field appearance="outline">
+                        <mat-label>Last Name</mat-label>
+                        <input matInput placeholder="Last Name" type="text">
+
+                    </mat-form-field>
+
+                </div>
+
+
+            </div>
+
+        </mat-card-content>
+
+
+
+    </mat-card>
+</div>
+<div mat-dialog-actions>
+    <button mat-button mat-dialog-close>Add</button>
+    <button mat-button mat-dialog-close cdkFocusInitial>Close</button>
+</div>

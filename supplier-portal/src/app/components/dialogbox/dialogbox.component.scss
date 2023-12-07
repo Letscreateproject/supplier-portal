@@ -1,0 +1,97 @@
+.example-card {
+    // width: 400px;
+ }
+ .button-act {
+     padding-left: 10px;
+     padding-right: 10px;
+ }
+ .example-card-container {
+     height: 100%;
+ }
+ 
+ .signup-page{
+     box-shadow: none !important;
+     background: none;
+ }
+ .signup-page ::ng-deep .mat-form-field-outline-start {
+     border-radius: 23px 0 0 23px !important;
+     min-width: 28px !important;
+   }
+   .signup-page ::ng-deep .mat-form-field-prefix{
+     margin-top:-8px;
+     margin-right: 4px;
+   }
+   .signup-page ::ng-deep .mat-form-field-outline-end {
+     border-radius: 0 23px 23px 0 !important;
+     min-width: 28px !important;
+   }
+   
+   /* Add padding to move the label and input into the center to prevent overlapping the rounded border */
+   .signup-page ::ng-deep .mat-form-field-appearance-outline .mat-form-field-flex {
+     padding: 0 32px !important;
+     font-size: 13px;
+   }
+ //   .signup-page ::ng-deep .mat-form-field-outline  {
+ //   color:   #d2d2d2 !important;
+ //   }
+ 
+   .signup-page ::ng-deep .mat-form-field-infix{
+     padding-top: 15px !important;
+     padding-bottom: 20px !important;
+   }
+   .log-btn{
+     width: 400px;
+     border-radius: 23px;
+     height: 60px;
+     background-color: #0575E6;color: #fff;
+   }
+   .terms{
+     cursor: pointer;
+     font-weight: 300;
+   }
+ 
+   .bottom-div{
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     a{
+       cursor: pointer;
+     }
+   }
+
+   .no-resize-handle textarea {
+    resize: none;
+  }
+
+  section {
+    display: table;
+  }
+  
+  .example-label {
+    display: table-cell;
+    font-size: 14px;
+    margin-left: 8px;
+    min-width: 120px;
+  }
+  
+  .example-button-row {
+    display: table-cell;
+    max-width: 600px;
+  }
+  
+  .example-button-row .mat-mdc-button-base {
+    margin: 8px 8px 8px 0;
+  }
+  
+  .example-flex-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .example-button-container {
+    display: flex;
+    justify-content: center;
+    width: 120px;
+  }
+  

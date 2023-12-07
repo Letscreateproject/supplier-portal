@@ -1,0 +1,33 @@
+<app-header></app-header>
+<!-- <app-menu></app-menu> -->
+<div class="content">
+  <mat-sidenav-container class="example-container">
+    <mat-sidenav #sidenav class="example-sidenav" mode="side" opened="true" (mouseenter)="mouseenter()"
+      (mouseleave)="mouseleave()">
+      <div class="sub-side">
+        <mat-nav-list>
+          <mat-list-item [routerLink]="item.menuItemUrl" routerLinkActive="activebutton" class="parent"
+            *ngFor="let item of menuItems">
+            <img src="{{item.menuItemIcon}}" alt="" class="img-st" />
+            <span class="full-width" *ngIf="isExpanded || isShowing"
+              style="font-size: 14px;">{{item.menuItemDisplayName}}</span>
+          </mat-list-item>
+
+        </mat-nav-list>
+        <mat-nav-list>
+        </mat-nav-list>
+
+      </div>
+    </mat-sidenav>
+
+    <div class="example-sidenav-content">
+
+      <router-outlet></router-outlet>
+      <app-chat></app-chat>
+
+    </div>
+
+  </mat-sidenav-container>
+
+</div>
+<app-footer></app-footer>

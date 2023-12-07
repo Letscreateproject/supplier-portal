@@ -1,0 +1,1991 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>angular-common-components documentation</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/dark.css">
+</head>
+
+<body>
+
+    <div class="navbar navbar-default navbar-fixed-top visible-xs">
+        <a href="../" class="navbar-brand">angular-common-components documentation</a>
+        <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+    </div>
+
+    <div class="xs-menu menu" id="mobile-menu">
+        <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>
+        <compodoc-menu></compodoc-menu>
+    </div>
+
+    <div class="container-fluid main">
+        <div class="row main">
+            <div class="hidden-xs menu">
+                <compodoc-menu mode="normal"></compodoc-menu>
+            </div>
+            <!-- START CONTENT -->
+            <div class="content component">
+                <div class="content-data">
+
+
+
+
+                    <ol class="breadcrumb">
+                        <li>Components</li>
+                        <li>
+                            TableListComponent</li>
+                    </ol>
+
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li class="active">
+                            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+                        </li>
+                        <li>
+                            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+                        </li>
+                        <li>
+                            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab"
+                                data-link="template">Template</a>
+                        </li>
+                        <li>
+                            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab"
+                                data-link="style">Styles</a>
+                        </li>
+                        <li>
+                            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+                        </li>
+                    </ul>
+
+                    <div class="tab-content">
+                        <div class="tab-pane fade active in" id="c-info">
+                            <p class="comment">
+                            <h3>File</h3>
+                            </p>
+                            <p class="comment">
+                                <code>src/app/components/shared-component/table-list/table-list.component.ts</code>
+                            </p>
+
+
+
+
+                            <p class="comment">
+                            <h3>Implements</h3>
+                            </p>
+                            <p class="comment">
+                                <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+                                <code><a href="https://angular.io/api/core/OnChanges" target="_blank" >OnChanges</a></code>
+                            </p>
+
+
+                            <section>
+                                <h3>Metadata</h3>
+                                <table class="table table-sm table-hover metadata">
+                                    <tbody>
+
+
+
+
+
+
+
+
+
+
+
+                                        <tr>
+                                            <td class="col-md-3">selector</td>
+                                            <td class="col-md-9"><code>app-table-list</code></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="col-md-3">styleUrls</td>
+                                            <td class="col-md-9"><code>./table-list.component.scss</code></td>
+                                        </tr>
+
+
+
+                                        <tr>
+                                            <td class="col-md-3">templateUrl</td>
+                                            <td class="col-md-9"><code>./table-list.component.html</code></td>
+                                        </tr>
+
+
+
+
+
+
+
+
+                                    </tbody>
+                                </table>
+                            </section>
+
+                            <section>
+                                <h3 id="index">Index</h3>
+                                <table class="table table-sm table-bordered index-table">
+                                    <tbody>
+                                        <tr>
+                                            <td class="col-md-4">
+                                                <h6><b>Properties</b></h6>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="col-md-4">
+                                                <ul class="index-list">
+                                                    <li>
+                                                        <a href="#approve">approve</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#dataSource">dataSource</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#displayedColumns">displayedColumns</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#paginator">paginator</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#reject">reject</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#showStatus">showStatus</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#sort">sort</a>
+                                                    </li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="col-md-4">
+                                                <h6><b>Methods</b></h6>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="col-md-4">
+                                                <ul class="index-list">
+                                                    <li>
+                                                        <a href="#applyFilter">applyFilter</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#emitIconAction">emitIconAction</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#emitRowAction">emitRowAction</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#ngAfterViewInit">ngAfterViewInit</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#ngOnChanges">ngOnChanges</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#ngOnInit">ngOnInit</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#pageChange">pageChange</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#setTableDataSource">setTableDataSource</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#sortTable">sortTable</a>
+                                                    </li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="col-md-4">
+                                                <h6><b>Inputs</b></h6>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="col-md-4">
+                                                <ul class="index-list">
+                                                    <li>
+                                                        <a href="#columns">columns</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#data">data</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#defaultPageSize">defaultPageSize</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#downloadAction">downloadAction</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#isFilterable">isFilterable</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#isPageable">isPageable</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#isSortable">isSortable</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#order">order</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#paginationSizes">paginationSizes</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#rowActionIcon">rowActionIcon</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#ViewIconAction">ViewIconAction</a>
+                                                    </li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="col-md-4">
+                                                <h6><b>Outputs</b></h6>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="col-md-4">
+                                                <ul class="index-list">
+                                                    <li>
+                                                        <a href="#pageevent">pageevent</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#rowAction">rowAction</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#sortevent">sortevent</a>
+                                                    </li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+
+
+
+                                    </tbody>
+                                </table>
+                            </section>
+
+                            <section>
+                                <h3 id="constructor">Constructor</h3>
+                                <table class="table table-sm table-bordered">
+                                    <tbody>
+                                        <tr>
+                                            <td class="col-md-4">
+                                                <code>constructor(commonSvc: <a href="../injectables/CommonService.html" target="_self">CommonService</a>, notifer: <a href="../injectables/NotifierService.html" target="_self">NotifierService</a>)</code>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="col-md-4">
+                                                <div class="io-line">Defined in <a href="" data-line="31"
+                                                        class="link-to-prism">src/app/components/shared-component/table-list/table-list.component.ts:31</a>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="col-md-4">
+                                                <div>
+                                                    <b>Parameters :</b>
+                                                    <table class="params">
+                                                        <thead>
+                                                            <tr>
+                                                                <td>Name</td>
+                                                                <td>Type</td>
+                                                                <td>Optional</td>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>commonSvc</td>
+
+                                                                <td>
+                                                                    <code><a href="../injectables/CommonService.html" target="_self" >CommonService</a></code>
+                                                                </td>
+
+                                                                <td>
+                                                                    No
+                                                                </td>
+
+                                                            </tr>
+                                                            <tr>
+                                                                <td>notifer</td>
+
+                                                                <td>
+                                                                    <code><a href="../injectables/NotifierService.html" target="_self" >NotifierService</a></code>
+                                                                </td>
+
+                                                                <td>
+                                                                    No
+                                                                </td>
+
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </section>
+
+                            <section>
+                                <h3 id="inputs">Inputs</h3>
+                                <table class="table table-sm table-bordered">
+                                    <tbody>
+                                        <tr>
+                                            <td class="col-md-4">
+                                                <a name="columns"></a>
+                                                <b>columns</b>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="col-md-4">
+                                                <i>Type : </i> <code>any[]</code>
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="col-md-4">
+                                                <i>Default value : </i><code>[]</code>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="col-md-2" colspan="2">
+                                                <div class="io-line">Defined in <a href="" data-line="59"
+                                                        class="link-to-prism">src/app/components/shared-component/table-list/table-list.component.ts:59</a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <table class="table table-sm table-bordered">
+                                    <tbody>
+                                        <tr>
+                                            <td class="col-md-4">
+                                                <a name="data"></a>
+                                                <b>data</b>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="col-md-4">
+                                                <i>Type : </i> <code>any[]</code>
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="col-md-4">
+                                                <i>Default value : </i><code>[]</code>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="col-md-2" colspan="2">
+                                                <div class="io-line">Defined in <a href="" data-line="58"
+                                                        class="link-to-prism">src/app/components/shared-component/table-list/table-list.component.ts:58</a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <table class="table table-sm table-bordered">
+                                    <tbody>
+                                        <tr>
+                                            <td class="col-md-4">
+                                                <a name="defaultPageSize"></a>
+                                                <b>defaultPageSize</b>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="col-md-4">
+                                                <i>Type : </i>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="col-md-4">
+                                                <i>Default value : </i><code>this.paginationSizes[0]</code>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="col-md-2" colspan="2">
+                                                <div class="io-line">Defined in <a href="" data-line="67"
+                                                        class="link-to-prism">src/app/components/shared-component/table-list/table-list.component.ts:67</a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <table class="table table-sm table-bordered">
+                                    <tbody>
+                                        <tr>
+                                            <td class="col-md-4">
+                                                <a name="downloadAction"></a>
+                                                <b>downloadAction</b>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="col-md-4">
+                                                <i>Type : </i>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="col-md-2" colspan="2">
+                                                <div class="io-line">Defined in <a href="" data-line="65"
+                                                        class="link-to-prism">src/app/components/shared-component/table-list/table-list.component.ts:65</a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <table class="table table-sm table-bordered">
+                                    <tbody>
+                                        <tr>
+                                            <td class="col-md-4">
+                                                <a name="isFilterable"></a>
+                                                <b>isFilterable</b>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="col-md-4">
+                                                <i>Type : </i>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="col-md-2" colspan="2">
+                                                <div class="io-line">Defined in <a href="" data-line="62"
+                                                        class="link-to-prism">src/app/components/shared-component/table-list/table-list.component.ts:62</a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <table class="table table-sm table-bordered">
+                                    <tbody>
+                                        <tr>
+                                            <td class="col-md-4">
+                                                <a name="isPageable"></a>
+                                                <b>isPageable</b>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="col-md-4">
+                                                <i>Type : </i>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="col-md-2" colspan="2">
+                                                <div class="io-line">Defined in <a href="" data-line="60"
+                                                        class="link-to-prism">src/app/components/shared-component/table-list/table-list.component.ts:60</a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <table class="table table-sm table-bordered">
+                                    <tbody>
+                                        <tr>
+                                            <td class="col-md-4">
+                                                <a name="isSortable"></a>
+                                                <b>isSortable</b>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="col-md-4">
+                                                <i>Type : </i>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="col-md-2" colspan="2">
+                                                <div class="io-line">Defined in <a href="" data-line="61"
+                                                        class="link-to-prism">src/app/components/shared-component/table-list/table-list.component.ts:61</a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <table class="table table-sm table-bordered">
+                                    <tbody>
+                                        <tr>
+                                            <td class="col-md-4">
+                                                <a name="order"></a>
+                                                <b>order</b>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="col-md-4">
+                                                <i>Type : </i>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="col-md-4">
+                                                <i>Default value : </i><code>0</code>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="col-md-2" colspan="2">
+                                                <div class="io-line">Defined in <a href="" data-line="68"
+                                                        class="link-to-prism">src/app/components/shared-component/table-list/table-list.component.ts:68</a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <table class="table table-sm table-bordered">
+                                    <tbody>
+                                        <tr>
+                                            <td class="col-md-4">
+                                                <a name="paginationSizes"></a>
+                                                <b>paginationSizes</b>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="col-md-4">
+                                                <i>Type : </i> <code>number[]</code>
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="col-md-4">
+                                                <i>Default value : </i><code>[5, 10, 15]</code>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="col-md-2" colspan="2">
+                                                <div class="io-line">Defined in <a href="" data-line="66"
+                                                        class="link-to-prism">src/app/components/shared-component/table-list/table-list.component.ts:66</a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <table class="table table-sm table-bordered">
+                                    <tbody>
+                                        <tr>
+                                            <td class="col-md-4">
+                                                <a name="rowActionIcon"></a>
+                                                <b>rowActionIcon</b>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="col-md-4">
+                                                <i>Type : </i> <code>string[]</code>
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="col-md-2" colspan="2">
+                                                <div class="io-line">Defined in <a href="" data-line="63"
+                                                        class="link-to-prism">src/app/components/shared-component/table-list/table-list.component.ts:63</a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <table class="table table-sm table-bordered">
+                                    <tbody>
+                                        <tr>
+                                            <td class="col-md-4">
+                                                <a name="ViewIconAction"></a>
+                                                <b>ViewIconAction</b>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="col-md-4">
+                                                <i>Type : </i>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="col-md-2" colspan="2">
+                                                <div class="io-line">Defined in <a href="" data-line="64"
+                                                        class="link-to-prism">src/app/components/shared-component/table-list/table-list.component.ts:64</a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </section>
+                            <section>
+                                <h3 id="outputs">Outputs</h3>
+                                <table class="table table-sm table-bordered">
+                                    <tbody>
+                                        <tr>
+                                            <td class="col-md-4">
+                                                <a name="pageevent"></a>
+                                                <b>pageevent</b>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="col-md-4">
+                                                <i>Type : </i> <code>EventEmitter&lt;PageEvent&gt;</code>
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="col-md-2" colspan="2">
+                                                <div class="io-line">Defined in <a href="" data-line="71"
+                                                        class="link-to-prism">src/app/components/shared-component/table-list/table-list.component.ts:71</a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <table class="table table-sm table-bordered">
+                                    <tbody>
+                                        <tr>
+                                            <td class="col-md-4">
+                                                <a name="rowAction"></a>
+                                                <b>rowAction</b>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="col-md-4">
+                                                <i>Type : </i> <code>EventEmitter&lt;any&gt;</code>
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="col-md-2" colspan="2">
+                                                <div class="io-line">Defined in <a href="" data-line="72"
+                                                        class="link-to-prism">src/app/components/shared-component/table-list/table-list.component.ts:72</a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <table class="table table-sm table-bordered">
+                                    <tbody>
+                                        <tr>
+                                            <td class="col-md-4">
+                                                <a name="sortevent"></a>
+                                                <b>sortevent</b>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="col-md-4">
+                                                <i>Type : </i> <code>EventEmitter&lt;Sort&gt;</code>
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="col-md-2" colspan="2">
+                                                <div class="io-line">Defined in <a href="" data-line="70"
+                                                        class="link-to-prism">src/app/components/shared-component/table-list/table-list.component.ts:70</a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </section>
+
+
+                            <section>
+
+                                <h3 id="methods">
+                                    Methods
+                                </h3>
+                                <table class="table table-sm table-bordered">
+                                    <tbody>
+                                        <tr>
+                                            <td class="col-md-4">
+                                                <a name="applyFilter"></a>
+                                                <span class="name">
+                                                    <span><b>applyFilter</b></span>
+                                                    <a href="#applyFilter"><span class="icon ion-ios-link"></span></a>
+                                                </span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="col-md-4">
+                                                <code>applyFilter(event: <a href="https://angular.io/api/router/Event" target="_blank">Event</a>)</code>
+                                            </td>
+                                        </tr>
+
+
+                                        <tr>
+                                            <td class="col-md-4">
+                                                <div class="io-line">Defined in <a href="" data-line="94"
+                                                        class="link-to-prism">src/app/components/shared-component/table-list/table-list.component.ts:94</a>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+
+                                        <tr>
+                                            <td class="col-md-4">
+                                                <div class="io-description">
+                                                    <p>Used for filtering</p>
+                                                </div>
+
+                                                <div class="io-description">
+                                                    <b>Parameters :</b>
+
+                                                    <table class="params">
+                                                        <thead>
+                                                            <tr>
+                                                                <td>Name</td>
+                                                                <td>Type</td>
+                                                                <td>Optional</td>
+                                                                <td>Description</td>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>event</td>
+                                                                <td>
+                                                                    <code><a href="https://angular.io/api/router/Event" target="_blank" >Event</a></code>
+                                                                </td>
+
+                                                                <td>
+                                                                    No
+                                                                </td>
+
+
+                                                                <td>
+                                                                    <ul>
+                                                                        <li>The value to be filtered.</li>
+                                                                    </ul>
+
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <div>
+                                                </div>
+                                                <div class="io-description">
+                                                    <b>Returns : </b>
+                                                    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                                                </div>
+                                                <div class="io-description">
+                                                    <p>list of objects.</p>
+
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <table class="table table-sm table-bordered">
+                                    <tbody>
+                                        <tr>
+                                            <td class="col-md-4">
+                                                <a name="emitIconAction"></a>
+                                                <span class="name">
+                                                    <span><b>emitIconAction</b></span>
+                                                    <a href="#emitIconAction"><span
+                                                            class="icon ion-ios-link"></span></a>
+                                                </span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="col-md-4">
+                                                <code>emitIconAction(row: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>, action: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                                            </td>
+                                        </tr>
+
+
+                                        <tr>
+                                            <td class="col-md-4">
+                                                <div class="io-line">Defined in <a href="" data-line="124"
+                                                        class="link-to-prism">src/app/components/shared-component/table-list/table-list.component.ts:124</a>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+
+                                        <tr>
+                                            <td class="col-md-4">
+
+                                                <div class="io-description">
+                                                    <b>Parameters :</b>
+
+                                                    <table class="params">
+                                                        <thead>
+                                                            <tr>
+                                                                <td>Name</td>
+                                                                <td>Type</td>
+                                                                <td>Optional</td>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>row</td>
+                                                                <td>
+                                                                    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                                                </td>
+
+                                                                <td>
+                                                                    No
+                                                                </td>
+
+
+                                                            </tr>
+                                                            <tr>
+                                                                <td>action</td>
+                                                                <td>
+                                                                    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                                                </td>
+
+                                                                <td>
+                                                                    No
+                                                                </td>
+
+
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <div>
+                                                </div>
+                                                <div class="io-description">
+                                                    <b>Returns : </b>
+                                                    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                                                </div>
+                                                <div class="io-description">
+
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <table class="table table-sm table-bordered">
+                                    <tbody>
+                                        <tr>
+                                            <td class="col-md-4">
+                                                <a name="emitRowAction"></a>
+                                                <span class="name">
+                                                    <span><b>emitRowAction</b></span>
+                                                    <a href="#emitRowAction"><span class="icon ion-ios-link"></span></a>
+                                                </span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="col-md-4">
+                                                <code>emitRowAction(row: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>, action: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, i: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                                            </td>
+                                        </tr>
+
+
+                                        <tr>
+                                            <td class="col-md-4">
+                                                <div class="io-line">Defined in <a href="" data-line="109"
+                                                        class="link-to-prism">src/app/components/shared-component/table-list/table-list.component.ts:109</a>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+
+                                        <tr>
+                                            <td class="col-md-4">
+
+                                                <div class="io-description">
+                                                    <b>Parameters :</b>
+
+                                                    <table class="params">
+                                                        <thead>
+                                                            <tr>
+                                                                <td>Name</td>
+                                                                <td>Type</td>
+                                                                <td>Optional</td>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>row</td>
+                                                                <td>
+                                                                    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                                                </td>
+
+                                                                <td>
+                                                                    No
+                                                                </td>
+
+
+                                                            </tr>
+                                                            <tr>
+                                                                <td>action</td>
+                                                                <td>
+                                                                    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                                                </td>
+
+                                                                <td>
+                                                                    No
+                                                                </td>
+
+
+                                                            </tr>
+                                                            <tr>
+                                                                <td>i</td>
+                                                                <td>
+                                                                    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                                                </td>
+
+                                                                <td>
+                                                                    No
+                                                                </td>
+
+
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <div>
+                                                </div>
+                                                <div class="io-description">
+                                                    <b>Returns : </b>
+                                                    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                                                </div>
+                                                <div class="io-description">
+
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <table class="table table-sm table-bordered">
+                                    <tbody>
+                                        <tr>
+                                            <td class="col-md-4">
+                                                <a name="ngAfterViewInit"></a>
+                                                <span class="name">
+                                                    <span><b>ngAfterViewInit</b></span>
+                                                    <a href="#ngAfterViewInit"><span
+                                                            class="icon ion-ios-link"></span></a>
+                                                </span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="col-md-4">
+                                                <code>ngAfterViewInit()</code>
+                                            </td>
+                                        </tr>
+
+
+                                        <tr>
+                                            <td class="col-md-4">
+                                                <div class="io-line">Defined in <a href="" data-line="78"
+                                                        class="link-to-prism">src/app/components/shared-component/table-list/table-list.component.ts:78</a>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+
+                                        <tr>
+                                            <td class="col-md-4">
+
+                                                <div class="io-description">
+                                                    <b>Returns : </b>
+                                                    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <table class="table table-sm table-bordered">
+                                    <tbody>
+                                        <tr>
+                                            <td class="col-md-4">
+                                                <a name="ngOnChanges"></a>
+                                                <span class="name">
+                                                    <span><b>ngOnChanges</b></span>
+                                                    <a href="#ngOnChanges"><span class="icon ion-ios-link"></span></a>
+                                                </span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="col-md-4">
+                                                <code>ngOnChanges(changes: <a href="https://angular.io/api/core/SimpleChanges" target="_blank">SimpleChanges</a>)</code>
+                                            </td>
+                                        </tr>
+
+
+                                        <tr>
+                                            <td class="col-md-4">
+                                                <div class="io-line">Defined in <a href="" data-line="37"
+                                                        class="link-to-prism">src/app/components/shared-component/table-list/table-list.component.ts:37</a>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+
+                                        <tr>
+                                            <td class="col-md-4">
+
+                                                <div class="io-description">
+                                                    <b>Parameters :</b>
+
+                                                    <table class="params">
+                                                        <thead>
+                                                            <tr>
+                                                                <td>Name</td>
+                                                                <td>Type</td>
+                                                                <td>Optional</td>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>changes</td>
+                                                                <td>
+                                                                    <code><a href="https://angular.io/api/core/SimpleChanges" target="_blank" >SimpleChanges</a></code>
+                                                                </td>
+
+                                                                <td>
+                                                                    No
+                                                                </td>
+
+
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <div>
+                                                </div>
+                                                <div class="io-description">
+                                                    <b>Returns : </b>
+                                                    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                                                </div>
+                                                <div class="io-description">
+
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <table class="table table-sm table-bordered">
+                                    <tbody>
+                                        <tr>
+                                            <td class="col-md-4">
+                                                <a name="ngOnInit"></a>
+                                                <span class="name">
+                                                    <span><b>ngOnInit</b></span>
+                                                    <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                                                </span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="col-md-4">
+                                                <code>ngOnInit()</code>
+                                            </td>
+                                        </tr>
+
+
+                                        <tr>
+                                            <td class="col-md-4">
+                                                <div class="io-line">Defined in <a href="" data-line="74"
+                                                        class="link-to-prism">src/app/components/shared-component/table-list/table-list.component.ts:74</a>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+
+                                        <tr>
+                                            <td class="col-md-4">
+
+                                                <div class="io-description">
+                                                    <b>Returns : </b>
+                                                    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <table class="table table-sm table-bordered">
+                                    <tbody>
+                                        <tr>
+                                            <td class="col-md-4">
+                                                <a name="pageChange"></a>
+                                                <span class="name">
+                                                    <span><b>pageChange</b></span>
+                                                    <a href="#pageChange"><span class="icon ion-ios-link"></span></a>
+                                                </span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="col-md-4">
+                                                <code>pageChange(event: PageEvent)</code>
+                                            </td>
+                                        </tr>
+
+
+                                        <tr>
+                                            <td class="col-md-4">
+                                                <div class="io-line">Defined in <a href="" data-line="105"
+                                                        class="link-to-prism">src/app/components/shared-component/table-list/table-list.component.ts:105</a>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+
+                                        <tr>
+                                            <td class="col-md-4">
+
+                                                <div class="io-description">
+                                                    <b>Parameters :</b>
+
+                                                    <table class="params">
+                                                        <thead>
+                                                            <tr>
+                                                                <td>Name</td>
+                                                                <td>Type</td>
+                                                                <td>Optional</td>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>event</td>
+                                                                <td>
+                                                                    <code>PageEvent</code>
+                                                                </td>
+
+                                                                <td>
+                                                                    No
+                                                                </td>
+
+
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <div>
+                                                </div>
+                                                <div class="io-description">
+                                                    <b>Returns : </b>
+                                                    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                                                </div>
+                                                <div class="io-description">
+
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <table class="table table-sm table-bordered">
+                                    <tbody>
+                                        <tr>
+                                            <td class="col-md-4">
+                                                <a name="setTableDataSource"></a>
+                                                <span class="name">
+                                                    <span><b>setTableDataSource</b></span>
+                                                    <a href="#setTableDataSource"><span
+                                                            class="icon ion-ios-link"></span></a>
+                                                </span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="col-md-4">
+                                                <code>setTableDataSource(data: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                                            </td>
+                                        </tr>
+
+
+                                        <tr>
+                                            <td class="col-md-4">
+                                                <div class="io-line">Defined in <a href="" data-line="83"
+                                                        class="link-to-prism">src/app/components/shared-component/table-list/table-list.component.ts:83</a>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+
+                                        <tr>
+                                            <td class="col-md-4">
+
+                                                <div class="io-description">
+                                                    <b>Parameters :</b>
+
+                                                    <table class="params">
+                                                        <thead>
+                                                            <tr>
+                                                                <td>Name</td>
+                                                                <td>Type</td>
+                                                                <td>Optional</td>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>data</td>
+                                                                <td>
+                                                                    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                                                </td>
+
+                                                                <td>
+                                                                    No
+                                                                </td>
+
+
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <div>
+                                                </div>
+                                                <div class="io-description">
+                                                    <b>Returns : </b>
+                                                    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                                                </div>
+                                                <div class="io-description">
+
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <table class="table table-sm table-bordered">
+                                    <tbody>
+                                        <tr>
+                                            <td class="col-md-4">
+                                                <a name="sortTable"></a>
+                                                <span class="name">
+                                                    <span><b>sortTable</b></span>
+                                                    <a href="#sortTable"><span class="icon ion-ios-link"></span></a>
+                                                </span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="col-md-4">
+                                                <code>sortTable(sortParameters: Sort)</code>
+                                            </td>
+                                        </tr>
+
+
+                                        <tr>
+                                            <td class="col-md-4">
+                                                <div class="io-line">Defined in <a href="" data-line="99"
+                                                        class="link-to-prism">src/app/components/shared-component/table-list/table-list.component.ts:99</a>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+
+                                        <tr>
+                                            <td class="col-md-4">
+
+                                                <div class="io-description">
+                                                    <b>Parameters :</b>
+
+                                                    <table class="params">
+                                                        <thead>
+                                                            <tr>
+                                                                <td>Name</td>
+                                                                <td>Type</td>
+                                                                <td>Optional</td>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>sortParameters</td>
+                                                                <td>
+                                                                    <code>Sort</code>
+                                                                </td>
+
+                                                                <td>
+                                                                    No
+                                                                </td>
+
+
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <div>
+                                                </div>
+                                                <div class="io-description">
+                                                    <b>Returns : </b>
+                                                    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                                                </div>
+                                                <div class="io-description">
+
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </section>
+                            <section>
+
+                                <h3 id="inputs">
+                                    Properties
+                                </h3>
+                                <table class="table table-sm table-bordered">
+                                    <tbody>
+                                        <tr>
+                                            <td class="col-md-4">
+                                                <a name="approve"></a>
+                                                <span class="name">
+                                                    <span><b>approve</b></span>
+                                                    <a href="#approve"><span class="icon ion-ios-link"></span></a>
+                                                </span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="col-md-4">
+                                                <i>Type : </i>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="col-md-4">
+                                                <div class="io-line">Defined in <a href="" data-line="30"
+                                                        class="link-to-prism">src/app/components/shared-component/table-list/table-list.component.ts:30</a>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+
+                                    </tbody>
+                                </table>
+                                <table class="table table-sm table-bordered">
+                                    <tbody>
+                                        <tr>
+                                            <td class="col-md-4">
+                                                <a name="dataSource"></a>
+                                                <span class="name">
+                                                    <span><b>dataSource</b></span>
+                                                    <a href="#dataSource"><span class="icon ion-ios-link"></span></a>
+                                                </span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="col-md-4">
+                                                <i>Type : </i> <code>MatTableDataSource&lt;any&gt;</code>
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="col-md-4">
+                                                <div class="io-line">Defined in <a href="" data-line="25"
+                                                        class="link-to-prism">src/app/components/shared-component/table-list/table-list.component.ts:25</a>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+
+                                    </tbody>
+                                </table>
+                                <table class="table table-sm table-bordered">
+                                    <tbody>
+                                        <tr>
+                                            <td class="col-md-4">
+                                                <a name="displayedColumns"></a>
+                                                <span class="name">
+                                                    <span><b>displayedColumns</b></span>
+                                                    <a href="#displayedColumns"><span
+                                                            class="icon ion-ios-link"></span></a>
+                                                </span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="col-md-4">
+                                                <i>Type : </i> <code>any[]</code>
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="col-md-4">
+                                                <i>Default value : </i><code>[]</code>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="col-md-4">
+                                                <div class="io-line">Defined in <a href="" data-line="24"
+                                                        class="link-to-prism">src/app/components/shared-component/table-list/table-list.component.ts:24</a>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+
+                                    </tbody>
+                                </table>
+                                <table class="table table-sm table-bordered">
+                                    <tbody>
+                                        <tr>
+                                            <td class="col-md-4">
+                                                <a name="paginator"></a>
+                                                <span class="name">
+                                                    <span><b>paginator</b></span>
+                                                    <a href="#paginator"><span class="icon ion-ios-link"></span></a>
+                                                </span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="col-md-4">
+                                                <i>Type : </i> <code>MatPaginator</code>
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="col-md-4">
+                                                <b>Decorators : </b>
+                                                <br />
+                                                <code>
+                            @ViewChild(MatPaginator)<br />
+                        </code>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="col-md-4">
+                                                <div class="io-line">Defined in <a href="" data-line="27"
+                                                        class="link-to-prism">src/app/components/shared-component/table-list/table-list.component.ts:27</a>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+
+                                    </tbody>
+                                </table>
+                                <table class="table table-sm table-bordered">
+                                    <tbody>
+                                        <tr>
+                                            <td class="col-md-4">
+                                                <a name="reject"></a>
+                                                <span class="name">
+                                                    <span><b>reject</b></span>
+                                                    <a href="#reject"><span class="icon ion-ios-link"></span></a>
+                                                </span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="col-md-4">
+                                                <i>Type : </i>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="col-md-4">
+                                                <div class="io-line">Defined in <a href="" data-line="31"
+                                                        class="link-to-prism">src/app/components/shared-component/table-list/table-list.component.ts:31</a>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+
+                                    </tbody>
+                                </table>
+                                <table class="table table-sm table-bordered">
+                                    <tbody>
+                                        <tr>
+                                            <td class="col-md-4">
+                                                <a name="showStatus"></a>
+                                                <span class="name">
+                                                    <span><b>showStatus</b></span>
+                                                    <a href="#showStatus"><span class="icon ion-ios-link"></span></a>
+                                                </span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="col-md-4">
+                                                <i>Type : </i>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="col-md-4">
+                                                <i>Default value : </i><code>true</code>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="col-md-4">
+                                                <div class="io-line">Defined in <a href="" data-line="29"
+                                                        class="link-to-prism">src/app/components/shared-component/table-list/table-list.component.ts:29</a>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+
+                                    </tbody>
+                                </table>
+                                <table class="table table-sm table-bordered">
+                                    <tbody>
+                                        <tr>
+                                            <td class="col-md-4">
+                                                <a name="sort"></a>
+                                                <span class="name">
+                                                    <span><b>sort</b></span>
+                                                    <a href="#sort"><span class="icon ion-ios-link"></span></a>
+                                                </span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="col-md-4">
+                                                <i>Type : </i> <code>MatSort</code>
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="col-md-4">
+                                                <b>Decorators : </b>
+                                                <br />
+                                                <code>
+                            @ViewChild(MatSort)<br />
+                        </code>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="col-md-4">
+                                                <div class="io-line">Defined in <a href="" data-line="28"
+                                                        class="link-to-prism">src/app/components/shared-component/table-list/table-list.component.ts:28</a>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+
+                                    </tbody>
+                                </table>
+                            </section>
+
+                        </div>
+
+
+                        <div class="tab-pane fade  tab-source-code" id="c-source">
+                            <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import {
+  Component,
+  EventEmitter,
+  Input,
+  OnChanges,
+  OnInit,
+  Output,
+  SimpleChanges,
+  ViewChild,
+} from &#x27;@angular/core&#x27;;
+import { MatPaginator, PageEvent } from &#x27;@angular/material/paginator&#x27;;
+import { MatSort, Sort } from &#x27;@angular/material/sort&#x27;;
+import { MatTableDataSource } from &#x27;@angular/material/table&#x27;;
+import { CommonService } from &#x27;src/app/_services/common/common.service&#x27;;
+import { Constants } from &#x27;src/app/_services/constants&#x27;;
+import { NotifierService } from &#x27;src/app/_services/notifier/notifier.service&#x27;;
+
+@Component({
+  selector: &#x27;app-table-list&#x27;,
+  templateUrl: &#x27;./table-list.component.html&#x27;,
+  styleUrls: [&#x27;./table-list.component.scss&#x27;],
+})
+export class TableListComponent implements OnInit, OnChanges {
+  displayedColumns: any[] &#x3D; [];
+  dataSource!: MatTableDataSource&lt;any&gt;;
+
+  @ViewChild(MatPaginator) paginator!: MatPaginator;
+  @ViewChild(MatSort) sort!: MatSort;
+  showStatus: boolean &#x3D; true;
+  approve: any;
+  reject: any;
+
+  constructor(
+    private commonSvc: CommonService,
+    private notifer: NotifierService
+  ) {}
+  ngOnChanges(changes: SimpleChanges): void {
+    // debugger
+    if (changes[&#x27;columns&#x27;]?.currentValue) {
+      this.displayedColumns &#x3D; [];
+      if (this.order &#x3D;&#x3D;&#x3D; 1) {
+        this.columns &#x3D; this.columns.reverse();
+      }
+      this.columns.forEach((a) &#x3D;&gt; {
+        if (!a.hidden) {
+          this.displayedColumns.push(a.field);
+        }
+      });
+      console.log(this.displayedColumns);
+    }
+    if (changes[&#x27;order&#x27;]?.currentValue) {
+    }
+    if (changes[&#x27;data&#x27;]?.currentValue) {
+      this.setTableDataSource(this.data);
+    }
+  }
+
+  @Input() data: any[] &#x3D; [];
+  @Input() columns: any[] &#x3D; [];
+  @Input() isPageable!: boolean;
+  @Input() isSortable!: boolean;
+  @Input() isFilterable!: boolean;
+  @Input() rowActionIcon!: string[];
+  @Input() ViewIconAction!: boolean;
+  @Input() downloadAction!: boolean;
+  @Input() paginationSizes: number[] &#x3D; [5, 10, 15];
+  @Input() defaultPageSize &#x3D; this.paginationSizes[0];
+  @Input() order: number &#x3D; 0;
+
+  @Output() sortevent: EventEmitter&lt;Sort&gt; &#x3D; new EventEmitter();
+  @Output() pageevent: EventEmitter&lt;PageEvent&gt; &#x3D; new EventEmitter();
+  @Output() rowAction: EventEmitter&lt;any&gt; &#x3D; new EventEmitter&lt;any&gt;();
+
+  ngOnInit(): void {
+    this.showStatus &#x3D; true;
+  }
+
+  ngAfterViewInit(): void {
+    this.dataSource.paginator &#x3D; this.paginator;
+    this.dataSource.sort &#x3D; this.sort;
+  }
+
+  setTableDataSource(data: any) {
+    this.dataSource &#x3D; new MatTableDataSource&lt;any&gt;(data);
+    this.dataSource.paginator &#x3D; this.paginator;
+    this.dataSource.sort &#x3D; this.sort;
+  }
+ /**
+   * Used for filtering 
+   *
+   * @param {string} event - The value to be filtered.
+   * @returns {Array} list of objects.
+   */
+  applyFilter(event: Event) {
+    const filterValue &#x3D; (event.target as HTMLInputElement).value;
+    this.dataSource.filter &#x3D; filterValue.trim().toLowerCase();
+  }
+
+  sortTable(sortParameters: Sort) {
+    // defining name of data property, to sort by, instead of column name
+    // sortParameters.active &#x3D; this.tableColumns.find(column &#x3D;&gt; column.name &#x3D;&#x3D;&#x3D; sortParameters.active).dataKey;
+    // /this.sort.emit(sortParameters);
+  }
+
+  pageChange(event: PageEvent) {
+    // this.pageevent.emit(event)
+  }
+
+  emitRowAction(row: any, action: string, i: number) {
+    // debugger;
+    let index &#x3D; row.position;
+    const data &#x3D; { ...row, action, i };
+    this.rowAction.emit(data);
+    this.showStatus &#x3D; false;
+    if (data.action &#x3D;&#x3D; &#x27;Approve&#x27;) {
+      row.value &#x3D; true;
+      row.index &#x3D; true;
+    }
+    if (data.action &#x3D;&#x3D; &#x27;Reject&#x27;) {
+      row.value &#x3D; false;
+      row.index &#x3D; true;
+    }
+  }
+  emitIconAction(row: any, action: string) {
+    const data &#x3D; { ...row, action };
+    this.rowAction.emit(data);
+  }
+}
+</code></pre>
+                        </div>
+
+                        <div class="tab-pane fade " id="c-templateData">
+                            <pre class="line-numbers"><code class="language-html">&lt;ng-container *ngIf&#x3D;&quot;isFilterable&quot;&gt;
+    &lt;mat-form-field&gt;
+        &lt;mat-label&gt;Filter&lt;/mat-label&gt;
+        &lt;input matInput (keyup)&#x3D;&quot;applyFilter($event)&quot; placeholder&#x3D;&quot;filter&quot;&gt;
+    &lt;/mat-form-field&gt;
+&lt;/ng-container&gt;
+&lt;table mat-table [dataSource]&#x3D;&quot;dataSource&quot; class&#x3D;&quot;mat-elevation-z8 demo-table&quot; matSort&gt;
+    &lt;ng-container *ngFor&#x3D;&quot;let column of columns&quot; [matColumnDef]&#x3D;&quot;column.field&quot;&gt;
+        &lt;ng-container *ngIf&#x3D;&quot;!column.hidden&quot;&gt;
+            &lt;!-- &lt;th mat-header-cell *matHeaderCellDef&gt;
+                {{column.header}}
+            &lt;/th&gt; --&gt;
+            &lt;ng-container *ngIf&#x3D;&quot;isSortable; else notSortable&quot;&gt;
+                &lt;th mat-header-cell *matHeaderCellDef [mat-sort-header]&#x3D;&quot;column.field&quot;&gt;
+                    {{column.header}}
+                &lt;/th&gt;
+            &lt;/ng-container&gt;
+            &lt;!-- else not sortable --&gt;
+            &lt;ng-template #notSortable&gt;
+                &lt;th mat-header-cell *matHeaderCellDef&gt;
+                    {{column.header}}
+                &lt;/th&gt;
+            &lt;/ng-template&gt;
+
+            &lt;td mat-cell *matCellDef&#x3D;&quot;let  row ;let i &#x3D; index&quot;&gt;
+                &lt;div [ngSwitch]&#x3D;&quot;column.type&quot;&gt;
+                    &lt;!-- &lt;ng-container *ngSwitchCase&#x3D;&quot;&#x27;date&#x27;&quot;&gt;
+                            {{row[column.field] | date: &#x27;dd/MM/yyy&#x27;}}
+
+                        &lt;/ng-container&gt;
+                        &lt;ng-container *ngSwitchCase&#x3D;&quot;&#x27;datetime&#x27;&quot;&gt;
+                            {{row[column.field] | date: &#x27;dd/MM/yyy HH:mm:ss&#x27;}}
+
+                        &lt;/ng-container&gt; --&gt;
+                    &lt;!-- &lt;ng-container *ngSwitchCase&#x3D;&quot;&#x27;amount&#x27;&quot;&gt;
+                            $ {{row[column.field] | number}}
+
+                        &lt;/ng-container&gt;
+                        --&gt;
+                    &lt;ng-container *ngSwitchCase&#x3D;&quot;&#x27;viewIconAction&#x27;&quot;&gt;
+
+                        &lt;mat-icon matSuffix&gt;
+                            &lt;div style&#x3D;&quot;cursor: pointer;&quot; (click)&#x3D;&quot;emitRowAction(row,&#x27;view&#x27;,i)&quot;&gt;
+                                remove_red_eye
+
+                            &lt;/div&gt;
+                        &lt;/mat-icon&gt;
+                    &lt;/ng-container&gt;
+                    &lt;ng-container *ngSwitchCase&#x3D;&quot;&#x27;downloadIconAction&#x27;&quot;&gt;
+                        &lt;div style&#x3D;&quot;cursor: pointer;&quot; (click)&#x3D;&quot;emitRowAction(row,&#x27;download&#x27;,i)&quot;&gt;
+
+                            &lt;mat-icon matSuffix&gt;download
+
+                            &lt;/mat-icon&gt;
+                        &lt;/div&gt;
+                    &lt;/ng-container&gt;
+
+                    &lt;ng-container *ngSwitchCase&#x3D;&quot;&#x27;textbox&#x27;&quot;&gt;
+
+                        &lt;mat-form-field&gt;
+                            &lt;input matInput&gt;
+                        &lt;/mat-form-field&gt;
+
+                    &lt;/ng-container&gt;
+                    &lt;!-- &lt;ng-container *ngSwitchCase&#x3D;&quot;&#x27;status&#x27;&quot;&gt;
+                            &lt;div *ngIf&#x3D;&quot;row.index&quot; &gt;
+                               {{row.value}}
+
+                            &lt;/div&gt;
+                            
+
+                        &lt;/ng-container&gt; --&gt;
+                    &lt;ng-container *ngSwitchCase&#x3D;&quot;&#x27;action&#x27;&quot;&gt;
+                        &lt;div *ngIf&#x3D;&quot;!row.index&quot;&gt;
+                            &lt;div class&#x3D;&quot;example-button-row&quot;&gt;
+                                &lt;button mat-raised-button color&#x3D;&quot;{{button &#x3D;&#x3D;&#x3D; &#x27;Approve&#x27;? &#x27;primary&#x27; :&#x27;warn&#x27;}}&quot;
+                                    *ngFor&#x3D;&quot;let button of rowActionIcon; &quot; style&#x3D;&quot;margin-left: 5px;&quot;&gt;
+                                    &lt;span style&#x3D;&quot;cursor: pointer;&quot;
+                                        (click)&#x3D;&quot;emitRowAction(row,button,i)&quot;&gt;{{button}}&lt;/span&gt;
+                                &lt;/button&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;div *ngIf&#x3D;&quot;row.index&quot;&gt;
+                            &lt;div style&#x3D;&quot;color: green;&quot; *ngIf&#x3D;&quot; row.value&quot;&gt;
+
+                                Approved
+                            &lt;/div&gt;
+                            &lt;div style&#x3D;&quot;color: red;&quot; *ngIf&#x3D;&quot;!row.value&quot;&gt;
+
+                                Rejected
+                            &lt;/div&gt;
+
+                        &lt;/div&gt;
+
+                    &lt;/ng-container&gt;
+
+                    &lt;ng-container *ngSwitchDefault&gt;
+                        {{column.field &#x3D;&#x3D;&#x3D; &#x27;position&#x27; ? i + 1 : row[column.field]}}
+                    &lt;/ng-container&gt;
+                &lt;/div&gt;
+                &lt;!-- action column --&gt;
+
+                &lt;!-- &lt;div *ngIf&#x3D;&gt;&lt;/div&gt; --&gt;
+            &lt;/td&gt;
+        &lt;/ng-container&gt;
+
+    &lt;/ng-container&gt;
+
+    &lt;tr mat-header-row *matHeaderRowDef&#x3D;&quot;displayedColumns&quot;&gt;&lt;/tr&gt;
+    &lt;tr mat-row *matRowDef&#x3D;&quot;let row; columns: displayedColumns;&quot;&gt;&lt;/tr&gt;
+    &lt;tr class&#x3D;&quot;mat-row&quot; *matNoDataRow&gt;
+        &lt;td class&#x3D;&quot;mat-cell&quot; [attr.colspan]&#x3D;&quot;displayedColumns.length&quot; style&#x3D;&quot;text-align: center;&quot;&gt;
+            No data found
+        &lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+&lt;!-- Pagination --&gt;
+&lt;mat-paginator *ngIf&#x3D;&quot;isPageable&quot; [pageSizeOptions]&#x3D;&quot;paginationSizes&quot; [pageSize]&#x3D;&quot;defaultPageSize&quot; showFirstLastButtons&gt;
+&lt;/mat-paginator&gt;</code></pre>
+                        </div>
+
+                        <div class="tab-pane fade " id="c-styleData">
+                            <p class="comment">
+                                <code>./table-list.component.scss</code>
+                            </p>
+                            <pre class="line-numbers"><code class="language-scss">table {
+    width: 100%;
+  }
+
+  mat-form-field {
+    width: 40%;
+  }
+  .button-red {
+    background: blue;
+    color: #fff !important;
+    border: solid 0.3px blue;
+}
+
+.button-red:hover {
+    background: #001543;
+    border: solid 0.3px #ede4d7;
+    color: #fff;
+}
+section {
+  display: table;
+}
+
+.example-label {
+  display: table-cell;
+  font-size: 14px;
+  margin-left: 8px;
+  min-width: 120px;
+}
+
+.example-button-row {
+  display: table-cell;
+  max-width: 600px;
+}
+
+.example-button-row .mat-mdc-button-base {
+  margin: 8px 8px 8px 0;
+}
+
+.example-flex-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.example-button-container {
+  display: flex;
+  justify-content: center;
+  width: 120px;
+}</code></pre>
+                        </div>
+
+                        <div class="tab-pane fade " id="c-tree">
+                            <div id="tree-container"></div>
+                            <div class="tree-legend">
+                                <div class="title">
+                                    <b>Legend</b>
+                                </div>
+                                <div>
+                                    <div class="color htmlelement"></div><span>Html element</span>
+                                </div>
+                                <div>
+                                    <div class="color component"></div><span>Component</span>
+                                </div>
+                                <div>
+                                    <div class="color directive"></div><span>Html element with directive</span>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                    <script src="../js/libs/vis.min.js"></script>
+                    <script src="../js/libs/htmlparser.js"></script>
+                    <script src="../js/libs/deep-iterator.js"></script>
+                    <script>
+                        var COMPONENT_TEMPLATE = '<div><ng-container *ngIf="isFilterable">    <mat-form-field>        <mat-label>Filter</mat-label>        <input matInput (keyup)="applyFilter($event)" placeholder="filter">    </mat-form-field></ng-container><table mat-table [dataSource]="dataSource" class="mat-elevation-z8 demo-table" matSort>    <ng-container *ngFor="let column of columns" [matColumnDef]="column.field">        <ng-container *ngIf="!column.hidden">            <!-- <th mat-header-cell *matHeaderCellDef>                {{column.header}}            </th> -->            <ng-container *ngIf="isSortable; else notSortable">                <th mat-header-cell *matHeaderCellDef [mat-sort-header]="column.field">                    {{column.header}}                </th>            </ng-container>            <!-- else not sortable -->            <ng-template #notSortable>                <th mat-header-cell *matHeaderCellDef>                    {{column.header}}                </th>            </ng-template>            <td mat-cell *matCellDef="let  row ;let i = index">                <div [ngSwitch]="column.type">                    <!-- <ng-container *ngSwitchCase="\'date\'">                            {{row[column.field] | date: \'dd/MM/yyy\'}}                        </ng-container>                        <ng-container *ngSwitchCase="\'datetime\'">                            {{row[column.field] | date: \'dd/MM/yyy HH:mm:ss\'}}                        </ng-container> -->                    <!-- <ng-container *ngSwitchCase="\'amount\'">                            $ {{row[column.field] | number}}                        </ng-container>                        -->                    <ng-container *ngSwitchCase="\'viewIconAction\'">                        <mat-icon matSuffix>                            <div style="cursor: pointer;" (click)="emitRowAction(row,\'view\',i)">                                remove_red_eye                            </div>                        </mat-icon>                    </ng-container>                    <ng-container *ngSwitchCase="\'downloadIconAction\'">                        <div style="cursor: pointer;" (click)="emitRowAction(row,\'download\',i)">                            <mat-icon matSuffix>download                            </mat-icon>                        </div>                    </ng-container>                    <ng-container *ngSwitchCase="\'textbox\'">                        <mat-form-field>                            <input matInput>                        </mat-form-field>                    </ng-container>                    <!-- <ng-container *ngSwitchCase="\'status\'">                            <div *ngIf="row.index" >                               {{row.value}}                            </div>                                                    </ng-container> -->                    <ng-container *ngSwitchCase="\'action\'">                        <div *ngIf="!row.index">                            <div class="example-button-row">                                <button mat-raised-button color="{{button === \'Approve\'? \'primary\' :\'warn\'}}"                                    *ngFor="let button of rowActionIcon; " style="margin-left: 5px;">                                    <span style="cursor: pointer;"                                        (click)="emitRowAction(row,button,i)">{{button}}</span>                                </button>                            </div>                        </div>                        <div *ngIf="row.index">                            <div style="color: green;" *ngIf=" row.value">                                Approved                            </div>                            <div style="color: red;" *ngIf="!row.value">                                Rejected                            </div>                        </div>                    </ng-container>                    <ng-container *ngSwitchDefault>                        {{column.field === \'position\' ? i + 1 : row[column.field]}}                    </ng-container>                </div>                <!-- action column -->                <!-- <div *ngIf=></div> -->            </td>        </ng-container>    </ng-container>    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>    <tr class="mat-row" *matNoDataRow>        <td class="mat-cell" [attr.colspan]="displayedColumns.length" style="text-align: center;">            No data found        </td>    </tr></table><!-- Pagination --><mat-paginator *ngIf="isPageable" [pageSizeOptions]="paginationSizes" [pageSize]="defaultPageSize" showFirstLastButtons></mat-paginator></div>'
+                        var COMPONENTS = [{ 'name': 'ActionBarComponent', 'selector': 'mk-workspace-action-bar' }, { 'name': 'AddApplicantComponent', 'selector': 'app-add-applicant' }, { 'name': 'AppComponent', 'selector': 'app-root' }, { 'name': 'ApplicantDetailsComponent', 'selector': 'app-applicant-details' }, { 'name': 'AuditComponent', 'selector': 'app-audit' }, { 'name': 'BarChartComponent', 'selector': 'app-bar-chart' }, { 'name': 'CommonCardComponent', 'selector': 'app-common-card' }, { 'name': 'CommonPageHeaderComponent', 'selector': 'app-common-page-header' }, { 'name': 'CustomSnackbarComponent', 'selector': 'app-custom-snackbar' }, { 'name': 'Dashboard2Component', 'selector': 'app-dashboard2' }, { 'name': 'DashboardComponent', 'selector': 'app-dashboard' }, { 'name': 'DialogboxComponent', 'selector': 'app-dialogbox' }, { 'name': 'DownloadComponent', 'selector': 'app-download' }, { 'name': 'FooterComponent', 'selector': 'app-footer' }, { 'name': 'ForgotPasswordComponent', 'selector': 'app-forgot-password' }, { 'name': 'GroupComponent', 'selector': 'mk-workspace-group' }, { 'name': 'HeaderComponent', 'selector': 'app-header' }, { 'name': 'HomeComponent', 'selector': 'app-home' }, { 'name': 'LineChartComponent', 'selector': 'app-line-chart' }, { 'name': 'LoginComponent', 'selector': 'app-login' }, { 'name': 'MenuComponent', 'selector': 'app-menu' }, { 'name': 'PieChartComponent', 'selector': 'app-pie-chart' }, { 'name': 'ProgressComponent', 'selector': 'app-progress' }, { 'name': 'RuleBuilderComponent', 'selector': 'mk-workspace-rule-builder' }, { 'name': 'RuleContainerComponent', 'selector': 'mk-workspace-rule-container' }, { 'name': 'ShoppingBasketComponent', 'selector': 'app-shopping-basket' }, { 'name': 'ShoppinglistComponent', 'selector': 'app-shoppinglist' }, { 'name': 'SignupComponent', 'selector': 'app-signup' }, { 'name': 'TableListComponent', 'selector': 'app-table-list' }, { 'name': 'TabsComponent', 'selector': 'app-tabs' }, { 'name': 'UploadComponent', 'selector': 'app-upload' }, { 'name': 'UserformComponent', 'selector': 'app-userform' }, { 'name': 'UserlistComponent', 'selector': 'app-userlist' }];
+                        var DIRECTIVES = [{ 'name': 'DndDirective', 'selector': '[appDnd]' }];
+                        var ACTUAL_COMPONENT = { 'name': 'TableListComponent' };
+                    </script>
+                    <script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </div>
+                <div class="search-results">
+                    <div class="has-results">
+                        <h1 class="search-results-title"><span class='search-results-count'></span> results matching
+                            "<span class='search-query'></span>"</h1>
+                        <ul class="search-results-list"></ul>
+                    </div>
+                    <div class="no-results">
+                        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+                    </div>
+                </div>
+            </div>
+            <!-- END CONTENT -->
+        </div>
+    </div>
+
+    <label class="dark-mode-switch">
+        <input type="checkbox">
+        <span class="slider">
+            <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round"
+                stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+            </svg>
+        </span>
+    </label>
+
+    <script>
+        var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+        var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+        var COMPODOC_CURRENT_PAGE_URL = 'TableListComponent.html';
+        var MAX_SEARCH_RESULTS = 15;
+    </script>
+
+    <script src="../js/libs/custom-elements.min.js"></script>
+    <script src="../js/libs/lit-html.js"></script>
+
+    <script src="../js/menu-wc.js" defer></script>
+    <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+    <script src="../js/libs/bootstrap-native.js"></script>
+
+    <script src="../js/libs/es6-shim.min.js"></script>
+    <script src="../js/libs/EventDispatcher.js"></script>
+    <script src="../js/libs/promise.min.js"></script>
+    <script src="../js/libs/zepto.min.js"></script>
+
+    <script src="../js/compodoc.js"></script>
+
+    <script src="../js/tabs.js"></script>
+    <script src="../js/menu.js"></script>
+    <script src="../js/libs/clipboard.min.js"></script>
+    <script src="../js/libs/prism.js"></script>
+    <script src="../js/sourceCode.js"></script>
+    <script src="../js/search/search.js"></script>
+    <script src="../js/search/lunr.min.js"></script>
+    <script src="../js/search/search-lunr.js"></script>
+    <script src="../js/search/search_index.js"></script>
+    <script src="../js/lazy-load-graphs.js"></script>
+
+
+</body>
+
+</html>

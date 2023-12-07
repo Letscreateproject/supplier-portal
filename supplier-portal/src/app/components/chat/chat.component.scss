@@ -1,0 +1,78 @@
+.mat-fab {
+    position: fixed;
+    bottom: 77px;
+    right: 25px;
+  }
+  ::ng-deep .my-component-bottom-sheet{
+    padding: 0px !important;
+    border-top-right-radius: 15px !important;
+    border-top-left-radius: 15px !important;
+    max-width: 400px !important;
+    width: 400px  !important;
+    min-width: 400px !important;
+    // margin-left: 1120px !important;
+  }
+  .chat-card{
+    // padding: 0px;
+   ::ng-deep .mat-card-content {    
+        max-height: 350px;
+        overflow-y: auto;
+    }
+    ::ng-deep .mat-card-title{
+        display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    }
+  ::ng-deep{
+    .mat-card-header-text{
+        margin-left: 0px;
+        margin-right: 0px;
+        width: 100%;
+    }
+  }
+    ::ng-deep .mat-card-header{
+        // padding: 12px 0px 0px 0px !important;
+    }
+  }
+  .chat-list{
+    margin-top: 20px !important;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .chat{
+    border: 1px solid rgba(0,0,0,.12);
+    word-break: break-all;
+    border-radius: 5px;
+    padding: 5px;
+    // margin-bottom: 5px;
+    max-width: 280px;
+    font-size: 12px;
+  }
+  .chat-in{
+    align-self: self-start;
+  }
+  .chat-out{
+    align-self: self-end;
+  }
+  .chat-wrapper{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+  }
+  .chat-time{
+    font-size: 9px; }
+    .online{
+        width: 14px;
+        height: 14px;
+        background: #118000;
+        border-radius: 7px;
+    }
+  .title{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 3px;
+  }

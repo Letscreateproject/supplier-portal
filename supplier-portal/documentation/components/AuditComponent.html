@@ -1,0 +1,1012 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>angular-common-components documentation</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/dark.css">
+</head>
+
+<body>
+
+    <div class="navbar navbar-default navbar-fixed-top visible-xs">
+        <a href="../" class="navbar-brand">angular-common-components documentation</a>
+        <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+    </div>
+
+    <div class="xs-menu menu" id="mobile-menu">
+        <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>
+        <compodoc-menu></compodoc-menu>
+    </div>
+
+    <div class="container-fluid main">
+        <div class="row main">
+            <div class="hidden-xs menu">
+                <compodoc-menu mode="normal"></compodoc-menu>
+            </div>
+            <!-- START CONTENT -->
+            <div class="content component">
+                <div class="content-data">
+
+
+
+
+                    <ol class="breadcrumb">
+                        <li>Components</li>
+                        <li>
+                            AuditComponent</li>
+                    </ol>
+
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li class="active">
+                            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+                        </li>
+                        <li>
+                            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+                        </li>
+                        <li>
+                            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab"
+                                data-link="template">Template</a>
+                        </li>
+                        <li>
+                            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab"
+                                data-link="style">Styles</a>
+                        </li>
+                        <li>
+                            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+                        </li>
+                    </ul>
+
+                    <div class="tab-content">
+                        <div class="tab-pane fade active in" id="c-info">
+                            <p class="comment">
+                            <h3>File</h3>
+                            </p>
+                            <p class="comment">
+                                <code>src/app/components/audit/audit.component.ts</code>
+                            </p>
+
+
+
+
+
+
+                            <section>
+                                <h3>Metadata</h3>
+                                <table class="table table-sm table-hover metadata">
+                                    <tbody>
+
+
+
+
+
+
+
+
+
+
+
+                                        <tr>
+                                            <td class="col-md-3">selector</td>
+                                            <td class="col-md-9"><code>app-audit</code></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="col-md-3">styleUrls</td>
+                                            <td class="col-md-9"><code>./audit.component.scss</code></td>
+                                        </tr>
+
+
+
+                                        <tr>
+                                            <td class="col-md-3">templateUrl</td>
+                                            <td class="col-md-9"><code>./audit.component.html</code></td>
+                                        </tr>
+
+
+
+
+
+
+
+
+                                    </tbody>
+                                </table>
+                            </section>
+
+                            <section>
+                                <h3 id="index">Index</h3>
+                                <table class="table table-sm table-bordered index-table">
+                                    <tbody>
+                                        <tr>
+                                            <td class="col-md-4">
+                                                <h6><b>Properties</b></h6>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="col-md-4">
+                                                <ul class="index-list">
+                                                    <li>
+                                                        <a href="#column">column</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#columns">columns</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#dataSource">dataSource</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#displayedColumns">displayedColumns</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#fieldArray">fieldArray</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#title">title</a>
+                                                    </li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="col-md-4">
+                                                <h6><b>Methods</b></h6>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="col-md-4">
+                                                <ul class="index-list">
+                                                    <li>
+                                                        <a href="#buttonAction">buttonAction</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#getDocList">getDocList</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#ngOnInit">ngOnInit</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#takeAction">takeAction</a>
+                                                    </li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+
+
+
+
+
+                                    </tbody>
+                                </table>
+                            </section>
+
+                            <section>
+                                <h3 id="constructor">Constructor</h3>
+                                <table class="table table-sm table-bordered">
+                                    <tbody>
+                                        <tr>
+                                            <td class="col-md-4">
+                                                <code>constructor(commonSvc: <a href="../injectables/CommonService.html" target="_self">CommonService</a>, notifer: <a href="../injectables/NotifierService.html" target="_self">NotifierService</a>)</code>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="col-md-4">
+                                                <div class="io-line">Defined in <a href="" data-line="65"
+                                                        class="link-to-prism">src/app/components/audit/audit.component.ts:65</a>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="col-md-4">
+                                                <div>
+                                                    <b>Parameters :</b>
+                                                    <table class="params">
+                                                        <thead>
+                                                            <tr>
+                                                                <td>Name</td>
+                                                                <td>Type</td>
+                                                                <td>Optional</td>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>commonSvc</td>
+
+                                                                <td>
+                                                                    <code><a href="../injectables/CommonService.html" target="_self" >CommonService</a></code>
+                                                                </td>
+
+                                                                <td>
+                                                                    No
+                                                                </td>
+
+                                                            </tr>
+                                                            <tr>
+                                                                <td>notifer</td>
+
+                                                                <td>
+                                                                    <code><a href="../injectables/NotifierService.html" target="_self" >NotifierService</a></code>
+                                                                </td>
+
+                                                                <td>
+                                                                    No
+                                                                </td>
+
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </section>
+
+
+
+
+
+                            <section>
+
+                                <h3 id="methods">
+                                    Methods
+                                </h3>
+                                <table class="table table-sm table-bordered">
+                                    <tbody>
+                                        <tr>
+                                            <td class="col-md-4">
+                                                <a name="buttonAction"></a>
+                                                <span class="name">
+                                                    <span><b>buttonAction</b></span>
+                                                    <a href="#buttonAction"><span class="icon ion-ios-link"></span></a>
+                                                </span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="col-md-4">
+                                                <code>buttonAction(e: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                                            </td>
+                                        </tr>
+
+
+                                        <tr>
+                                            <td class="col-md-4">
+                                                <div class="io-line">Defined in <a href="" data-line="80"
+                                                        class="link-to-prism">src/app/components/audit/audit.component.ts:80</a>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+
+                                        <tr>
+                                            <td class="col-md-4">
+                                                <div class="io-description">
+                                                    <p>function called when button is clicked from the table</p>
+                                                </div>
+
+                                                <div class="io-description">
+                                                    <b>Parameters :</b>
+
+                                                    <table class="params">
+                                                        <thead>
+                                                            <tr>
+                                                                <td>Name</td>
+                                                                <td>Type</td>
+                                                                <td>Optional</td>
+                                                                <td>Description</td>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>e</td>
+                                                                <td>
+                                                                    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                                                </td>
+
+                                                                <td>
+                                                                    No
+                                                                </td>
+
+
+                                                                <td>
+                                                                    <ul>
+                                                                        <li>action event</li>
+                                                                    </ul>
+
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <div>
+                                                </div>
+                                                <div class="io-description">
+                                                    <b>Returns : </b>
+                                                    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                                                </div>
+                                                <div class="io-description">
+
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <table class="table table-sm table-bordered">
+                                    <tbody>
+                                        <tr>
+                                            <td class="col-md-4">
+                                                <a name="getDocList"></a>
+                                                <span class="name">
+                                                    <span><b>getDocList</b></span>
+                                                    <a href="#getDocList"><span class="icon ion-ios-link"></span></a>
+                                                </span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="col-md-4">
+                                                <code>getDocList()</code>
+                                            </td>
+                                        </tr>
+
+
+                                        <tr>
+                                            <td class="col-md-4">
+                                                <div class="io-line">Defined in <a href="" data-line="112"
+                                                        class="link-to-prism">src/app/components/audit/audit.component.ts:112</a>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+
+                                        <tr>
+                                            <td class="col-md-4">
+                                                <div class="io-description">
+                                                    <p>called from oninit to get the list of documents</p>
+                                                </div>
+
+                                                <div class="io-description">
+                                                    <b>Returns : </b>
+                                                    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <table class="table table-sm table-bordered">
+                                    <tbody>
+                                        <tr>
+                                            <td class="col-md-4">
+                                                <a name="ngOnInit"></a>
+                                                <span class="name">
+                                                    <span><b>ngOnInit</b></span>
+                                                    <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                                                </span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="col-md-4">
+                                                <code>ngOnInit()</code>
+                                            </td>
+                                        </tr>
+
+
+                                        <tr>
+                                            <td class="col-md-4">
+                                                <div class="io-line">Defined in <a href="" data-line="71"
+                                                        class="link-to-prism">src/app/components/audit/audit.component.ts:71</a>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+
+                                        <tr>
+                                            <td class="col-md-4">
+
+                                                <div class="io-description">
+                                                    <b>Returns : </b>
+                                                    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <table class="table table-sm table-bordered">
+                                    <tbody>
+                                        <tr>
+                                            <td class="col-md-4">
+                                                <a name="takeAction"></a>
+                                                <span class="name">
+                                                    <span><b>takeAction</b></span>
+                                                    <a href="#takeAction"><span class="icon ion-ios-link"></span></a>
+                                                </span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="col-md-4">
+                                                <code>takeAction(id: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>, type: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                                            </td>
+                                        </tr>
+
+
+                                        <tr>
+                                            <td class="col-md-4">
+                                                <div class="io-line">Defined in <a href="" data-line="131"
+                                                        class="link-to-prism">src/app/components/audit/audit.component.ts:131</a>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+
+                                        <tr>
+                                            <td class="col-md-4">
+                                                <div class="io-description">
+                                                    <p>function to take action on the buttons</p>
+                                                </div>
+
+                                                <div class="io-description">
+                                                    <b>Parameters :</b>
+
+                                                    <table class="params">
+                                                        <thead>
+                                                            <tr>
+                                                                <td>Name</td>
+                                                                <td>Type</td>
+                                                                <td>Optional</td>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>id</td>
+                                                                <td>
+                                                                    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                                                </td>
+
+                                                                <td>
+                                                                    No
+                                                                </td>
+
+
+                                                            </tr>
+                                                            <tr>
+                                                                <td>type</td>
+                                                                <td>
+                                                                    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                                                </td>
+
+                                                                <td>
+                                                                    No
+                                                                </td>
+
+
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <div>
+                                                </div>
+                                                <div class="io-description">
+                                                    <b>Returns : </b>
+                                                    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                                                </div>
+                                                <div class="io-description">
+
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </section>
+                            <section>
+
+                                <h3 id="inputs">
+                                    Properties
+                                </h3>
+                                <table class="table table-sm table-bordered">
+                                    <tbody>
+                                        <tr>
+                                            <td class="col-md-4">
+                                                <a name="column"></a>
+                                                <span class="name">
+                                                    <span><b>column</b></span>
+                                                    <a href="#column"><span class="icon ion-ios-link"></span></a>
+                                                </span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="col-md-4">
+                                                <i>Type : </i>
+                                                <code><a href="../interfaces/IColumn.html" target="_self" >IColumn</a></code>
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="col-md-4">
+                                                <div class="io-line">Defined in <a href="" data-line="74"
+                                                        class="link-to-prism">src/app/components/audit/audit.component.ts:74</a>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+
+                                    </tbody>
+                                </table>
+                                <table class="table table-sm table-bordered">
+                                    <tbody>
+                                        <tr>
+                                            <td class="col-md-4">
+                                                <a name="columns"></a>
+                                                <span class="name">
+                                                    <span><b>columns</b></span>
+                                                    <a href="#columns"><span class="icon ion-ios-link"></span></a>
+                                                </span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="col-md-4">
+                                                <i>Type : </i>
+                                                <code><a href="../interfaces/IColumn.html" target="_self" >IColumn[]</a></code>
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="col-md-4">
+                                                <i>Default value : </i><code>[
+    {
+      field: &#x27;position&#x27;,
+      header: &#x27;No.&#x27;,
+    },
+    {
+      field: &#x27;voucherFileName&#x27;,
+      header: &#x27;Voucher Name&#x27;,
+    },
+
+    // ,
+    {
+      field: &#x27;textbox&#x27;,
+      header: &#x27;Comments&#x27;,
+      type: &#x27;textbox&#x27;,
+    },
+
+    {
+      field: &#x27;action&#x27;,
+      header: &#x27;Status&#x27;,
+      type: &#x27;action&#x27;,
+    },
+  ]</code>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="col-md-4">
+                                                <div class="io-line">Defined in <a href="" data-line="41"
+                                                        class="link-to-prism">src/app/components/audit/audit.component.ts:41</a>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+
+                                    </tbody>
+                                </table>
+                                <table class="table table-sm table-bordered">
+                                    <tbody>
+                                        <tr>
+                                            <td class="col-md-4">
+                                                <a name="dataSource"></a>
+                                                <span class="name">
+                                                    <span><b>dataSource</b></span>
+                                                    <a href="#dataSource"><span class="icon ion-ios-link"></span></a>
+                                                </span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="col-md-4">
+                                                <i>Default value :
+                                                </i><code>JSON.parse(JSON.stringify(ELEMENT_DATA))</code>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="col-md-4">
+                                                <div class="io-line">Defined in <a href="" data-line="65"
+                                                        class="link-to-prism">src/app/components/audit/audit.component.ts:65</a>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+
+                                    </tbody>
+                                </table>
+                                <table class="table table-sm table-bordered">
+                                    <tbody>
+                                        <tr>
+                                            <td class="col-md-4">
+                                                <a name="displayedColumns"></a>
+                                                <span class="name">
+                                                    <span><b>displayedColumns</b></span>
+                                                    <a href="#displayedColumns"><span
+                                                            class="icon ion-ios-link"></span></a>
+                                                </span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="col-md-4">
+                                                <i>Default value :
+                                                </i><code>this.columns.map((c) &#x3D;&gt; c.field)</code>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="col-md-4">
+                                                <div class="io-line">Defined in <a href="" data-line="64"
+                                                        class="link-to-prism">src/app/components/audit/audit.component.ts:64</a>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+
+                                    </tbody>
+                                </table>
+                                <table class="table table-sm table-bordered">
+                                    <tbody>
+                                        <tr>
+                                            <td class="col-md-4">
+                                                <a name="fieldArray"></a>
+                                                <span class="name">
+                                                    <span><b>fieldArray</b></span>
+                                                    <a href="#fieldArray"><span class="icon ion-ios-link"></span></a>
+                                                </span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="col-md-4">
+                                                <i>Type : </i> <code>any[]</code>
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="col-md-4">
+                                                <i>Default value : </i><code>[]</code>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="col-md-4">
+                                                <div class="io-line">Defined in <a href="" data-line="39"
+                                                        class="link-to-prism">src/app/components/audit/audit.component.ts:39</a>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+
+                                    </tbody>
+                                </table>
+                                <table class="table table-sm table-bordered">
+                                    <tbody>
+                                        <tr>
+                                            <td class="col-md-4">
+                                                <a name="title"></a>
+                                                <span class="name">
+                                                    <span><b>title</b></span>
+                                                    <a href="#title"><span class="icon ion-ios-link"></span></a>
+                                                </span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="col-md-4">
+                                                <i>Type : </i>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="col-md-4">
+                                                <i>Default value : </i><code>&#x27;angular-material-app&#x27;</code>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="col-md-4">
+                                                <div class="io-line">Defined in <a href="" data-line="75"
+                                                        class="link-to-prism">src/app/components/audit/audit.component.ts:75</a>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+
+                                    </tbody>
+                                </table>
+                            </section>
+
+                        </div>
+
+
+                        <div class="tab-pane fade  tab-source-code" id="c-source">
+                            <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component } from &#x27;@angular/core&#x27;;
+import { CommonService } from &#x27;src/app/_services/common/common.service&#x27;;
+import { Constants } from &#x27;src/app/_services/constants&#x27;;
+import { NotifierService } from &#x27;src/app/_services/notifier/notifier.service&#x27;;
+import { saveAs } from &#x27;file-saver&#x27;;
+
+export interface PeriodicElement {
+  name: string;
+  position: number;
+}
+
+const ELEMENT_DATA: PeriodicElement[] &#x3D; [
+  { position: 1, name: &#x27;Voucher1.xlsx&#x27; },
+  { position: 2, name: &#x27;Voucher2.xlsx&#x27; },
+  { position: 3, name: &#x27;Voucher3.xlsx&#x27; },
+  { position: 4, name: &#x27;Voucher4.xlsx&#x27; },
+  { position: 5, name: &#x27;Voucher5.xlsx&#x27; },
+  { position: 6, name: &#x27;Voucher6.xlsx&#x27; },
+  { position: 7, name: &#x27;Voucher7.xlsx&#x27; },
+  // {position: 8, name: &#x27;Oxygen&#x27;, weight: 15.9994, symbol: &#x27;O&#x27;},
+  // {position: 9, name: &#x27;Fluorine&#x27;, weight: 18.9984, symbol: &#x27;F&#x27;},
+  // {position: 10, name: &#x27;Neon&#x27;, weight: 20.1797, symbol: &#x27;Ne&#x27;},
+];
+
+export interface IColumn {
+  field: string;
+  header: string;
+  hidden?: boolean;
+  type?: string;
+  date?: Date;
+}
+
+@Component({
+  selector: &#x27;app-audit&#x27;,
+  templateUrl: &#x27;./audit.component.html&#x27;,
+  styleUrls: [&#x27;./audit.component.scss&#x27;],
+})
+export class AuditComponent {
+  fieldArray: any[] &#x3D; [];
+
+  columns: IColumn[] &#x3D; [
+    {
+      field: &#x27;position&#x27;,
+      header: &#x27;No.&#x27;,
+    },
+    {
+      field: &#x27;voucherFileName&#x27;,
+      header: &#x27;Voucher Name&#x27;,
+    },
+
+    // ,
+    {
+      field: &#x27;textbox&#x27;,
+      header: &#x27;Comments&#x27;,
+      type: &#x27;textbox&#x27;,
+    },
+
+    {
+      field: &#x27;action&#x27;,
+      header: &#x27;Status&#x27;,
+      type: &#x27;action&#x27;,
+    },
+  ];
+  displayedColumns &#x3D; this.columns.map((c) &#x3D;&gt; c.field);
+  dataSource &#x3D; JSON.parse(JSON.stringify(ELEMENT_DATA));
+  constructor(
+    private commonSvc: CommonService,
+    private notifer: NotifierService
+  ) {}
+
+  ngOnInit(): void {
+    this.getDocList();
+  }
+  column!: IColumn;
+  title &#x3D; &#x27;angular-material-app&#x27;;
+  /**
+   * function called when button is clicked from the table
+   * @param {any} e - action event
+   */
+  buttonAction(e: any) {
+    if (e.action &#x3D;&#x3D; &#x27;Approve&#x27;) {
+      this.takeAction(e.id, true);
+    } else if (e.action &#x3D;&#x3D; &#x27;Reject&#x27;) {
+      this.takeAction(e.id, false);
+    } else if (e.action &#x3D;&#x3D; &#x27;view&#x27;) {
+      const blob &#x3D; this.commonSvc.base64ToBlob(
+        e.voucherFileBytes,
+        &#x27;application/vnd.openxmlformats-officedocument.spreadsheetml.sheet&#x27;
+      );
+      const url &#x3D; URL.createObjectURL(blob);
+
+      const popup &#x3D; window.open(url, &#x27;Excel Viewer&#x27;, &#x27;width&#x3D;800,height&#x3D;600&#x27;);
+
+      URL.revokeObjectURL(url); // Clean up the URL when done
+    } else {
+      const blob &#x3D; this.commonSvc.base64ToBlob(
+        e.voucherFileBytes,
+        &#x27;application/vnd.openxmlformats-officedocument.spreadsheetml.sheet&#x27;
+      );
+      const url &#x3D; window.URL.createObjectURL(blob);
+      const a &#x3D; document.createElement(&#x27;a&#x27;);
+      a.href &#x3D; url;
+      a.download &#x3D; e.voucherFileName; // Set the desired file name
+      a.click();
+      window.URL.revokeObjectURL(url);
+    }
+  }
+  /**
+   * called from oninit to get the list of documents
+   *
+   */
+  getDocList() {
+    this.dataSource &#x3D; [
+      {
+        position: 1,
+        voucherFileName: &#x27;Voucher1.xlsx&#x27;,
+        textbox: &#x27;textbox&#x27;,
+        action: &#x27;action&#x27;,
+        viewIconAction: &#x27;viewIconAction&#x27;,
+        downloadIconAction: &#x27;downloadIconAction&#x27;,
+        status: &#x27;status&#x27;,
+      },
+    ];
+  }
+
+  /**
+   * function to take action on the buttons
+   * @param {any} id
+   * @param {any} type
+   */
+  takeAction(id: any, type: any) {
+    const obj &#x3D; { id, type };
+    this.commonSvc.takeAction(obj).subscribe({
+      next: (data: any) &#x3D;&gt; {
+        let msg &#x3D; &#x27;Approved Successfully.&#x27;;
+        if (!type) {
+          msg &#x3D; &#x27;Rejected Successfully.&#x27;;
+        }
+
+        this.notifer.notify(msg, Constants.SUCCESS_NOTIFIER);
+        this.getDocList();
+      },
+      error: (e: any) &#x3D;&gt; {
+        //error
+        this.notifer.notify(&#x27;ERROR&#x27;, Constants.ERROR_NOTIFIER);
+      },
+    });
+  }
+}
+</code></pre>
+                        </div>
+
+                        <div class="tab-pane fade " id="c-templateData">
+                            <pre class="line-numbers"><code class="language-html">&lt;app-common-page-header [header]&#x3D;&quot;&#x27;Document List&#x27;&quot;&gt;&lt;/app-common-page-header&gt;
+&lt;app-table-list [isSortable]&#x3D;&quot;true&quot; [downloadAction]&#x3D;&quot;true&quot; [ViewIconAction]&#x3D;&quot;true&quot;
+    [rowActionIcon]&#x3D;&quot;[&#x27;Approve&#x27;,&#x27;Reject&#x27;]&quot; [isPageable]&#x3D;&quot;true&quot; [data]&#x3D;&quot;dataSource&quot; (rowAction)&#x3D;&quot;buttonAction($event)&quot;
+    [columns]&#x3D;&quot;columns&quot;&gt;&lt;/app-table-list&gt;
+&lt;!-- [isFilterable]&#x3D;&quot;true&quot; (rowAction)&#x3D;&quot;buttonAction($event)&quot;  [rowActionIcon]&#x3D;&quot;[&#x27;edit&#x27;,&#x27;update&#x27;]&quot; [data]&#x3D;&quot;dataSource&quot; [isSortable]&#x3D;&quot;true&quot; [isPageable]&#x3D;&quot;true&quot; [columns]&#x3D;&quot;columns&quot; 
+[isSortable]&#x3D;&quot;true&quot;
+ [isPageable]&#x3D;&quot;true&quot; 
+ [rowActionIcon]&#x3D;&quot;[&#x27;edit&#x27;,&#x27;update&#x27;]&quot;
+ [isFilterable]&#x3D;&quot;true&quot;
+--&gt;</code></pre>
+                        </div>
+
+                        <div class="tab-pane fade " id="c-styleData">
+                            <p class="comment">
+                                <code>./audit.component.scss</code>
+                            </p>
+                            <pre class="line-numbers"><code class="language-scss"></code></pre>
+                        </div>
+
+                        <div class="tab-pane fade " id="c-tree">
+                            <div id="tree-container"></div>
+                            <div class="tree-legend">
+                                <div class="title">
+                                    <b>Legend</b>
+                                </div>
+                                <div>
+                                    <div class="color htmlelement"></div><span>Html element</span>
+                                </div>
+                                <div>
+                                    <div class="color component"></div><span>Component</span>
+                                </div>
+                                <div>
+                                    <div class="color directive"></div><span>Html element with directive</span>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                    <script src="../js/libs/vis.min.js"></script>
+                    <script src="../js/libs/htmlparser.js"></script>
+                    <script src="../js/libs/deep-iterator.js"></script>
+                    <script>
+                        var COMPONENT_TEMPLATE = '<div><app-common-page-header [header]="\'Document List\'"></app-common-page-header><app-table-list [isSortable]="true" [downloadAction]="true" [ViewIconAction]="true"    [rowActionIcon]="[\'Approve\',\'Reject\']" [isPageable]="true" [data]="dataSource" (rowAction)="buttonAction($event)"    [columns]="columns"></app-table-list><!-- [isFilterable]="true" (rowAction)="buttonAction($event)"  [rowActionIcon]="[\'edit\',\'update\']" [data]="dataSource" [isSortable]="true" [isPageable]="true" [columns]="columns" [isSortable]="true" [isPageable]="true"  [rowActionIcon]="[\'edit\',\'update\']" [isFilterable]="true"--></div>'
+                        var COMPONENTS = [{ 'name': 'ActionBarComponent', 'selector': 'mk-workspace-action-bar' }, { 'name': 'AddApplicantComponent', 'selector': 'app-add-applicant' }, { 'name': 'AppComponent', 'selector': 'app-root' }, { 'name': 'ApplicantDetailsComponent', 'selector': 'app-applicant-details' }, { 'name': 'AuditComponent', 'selector': 'app-audit' }, { 'name': 'BarChartComponent', 'selector': 'app-bar-chart' }, { 'name': 'CommonCardComponent', 'selector': 'app-common-card' }, { 'name': 'CommonPageHeaderComponent', 'selector': 'app-common-page-header' }, { 'name': 'CustomSnackbarComponent', 'selector': 'app-custom-snackbar' }, { 'name': 'Dashboard2Component', 'selector': 'app-dashboard2' }, { 'name': 'DashboardComponent', 'selector': 'app-dashboard' }, { 'name': 'DialogboxComponent', 'selector': 'app-dialogbox' }, { 'name': 'DownloadComponent', 'selector': 'app-download' }, { 'name': 'FooterComponent', 'selector': 'app-footer' }, { 'name': 'ForgotPasswordComponent', 'selector': 'app-forgot-password' }, { 'name': 'GroupComponent', 'selector': 'mk-workspace-group' }, { 'name': 'HeaderComponent', 'selector': 'app-header' }, { 'name': 'HomeComponent', 'selector': 'app-home' }, { 'name': 'LineChartComponent', 'selector': 'app-line-chart' }, { 'name': 'LoginComponent', 'selector': 'app-login' }, { 'name': 'MenuComponent', 'selector': 'app-menu' }, { 'name': 'PieChartComponent', 'selector': 'app-pie-chart' }, { 'name': 'ProgressComponent', 'selector': 'app-progress' }, { 'name': 'RuleBuilderComponent', 'selector': 'mk-workspace-rule-builder' }, { 'name': 'RuleContainerComponent', 'selector': 'mk-workspace-rule-container' }, { 'name': 'ShoppingBasketComponent', 'selector': 'app-shopping-basket' }, { 'name': 'ShoppinglistComponent', 'selector': 'app-shoppinglist' }, { 'name': 'SignupComponent', 'selector': 'app-signup' }, { 'name': 'TableListComponent', 'selector': 'app-table-list' }, { 'name': 'TabsComponent', 'selector': 'app-tabs' }, { 'name': 'UploadComponent', 'selector': 'app-upload' }, { 'name': 'UserformComponent', 'selector': 'app-userform' }, { 'name': 'UserlistComponent', 'selector': 'app-userlist' }];
+                        var DIRECTIVES = [{ 'name': 'DndDirective', 'selector': '[appDnd]' }];
+                        var ACTUAL_COMPONENT = { 'name': 'AuditComponent' };
+                    </script>
+                    <script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </div>
+                <div class="search-results">
+                    <div class="has-results">
+                        <h1 class="search-results-title"><span class='search-results-count'></span> results matching
+                            "<span class='search-query'></span>"</h1>
+                        <ul class="search-results-list"></ul>
+                    </div>
+                    <div class="no-results">
+                        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+                    </div>
+                </div>
+            </div>
+            <!-- END CONTENT -->
+        </div>
+    </div>
+
+    <label class="dark-mode-switch">
+        <input type="checkbox">
+        <span class="slider">
+            <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round"
+                stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+            </svg>
+        </span>
+    </label>
+
+    <script>
+        var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+        var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+        var COMPODOC_CURRENT_PAGE_URL = 'AuditComponent.html';
+        var MAX_SEARCH_RESULTS = 15;
+    </script>
+
+    <script src="../js/libs/custom-elements.min.js"></script>
+    <script src="../js/libs/lit-html.js"></script>
+
+    <script src="../js/menu-wc.js" defer></script>
+    <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+    <script src="../js/libs/bootstrap-native.js"></script>
+
+    <script src="../js/libs/es6-shim.min.js"></script>
+    <script src="../js/libs/EventDispatcher.js"></script>
+    <script src="../js/libs/promise.min.js"></script>
+    <script src="../js/libs/zepto.min.js"></script>
+
+    <script src="../js/compodoc.js"></script>
+
+    <script src="../js/tabs.js"></script>
+    <script src="../js/menu.js"></script>
+    <script src="../js/libs/clipboard.min.js"></script>
+    <script src="../js/libs/prism.js"></script>
+    <script src="../js/sourceCode.js"></script>
+    <script src="../js/search/search.js"></script>
+    <script src="../js/search/lunr.min.js"></script>
+    <script src="../js/search/search-lunr.js"></script>
+    <script src="../js/search/search_index.js"></script>
+    <script src="../js/lazy-load-graphs.js"></script>
+
+
+</body>
+
+</html>

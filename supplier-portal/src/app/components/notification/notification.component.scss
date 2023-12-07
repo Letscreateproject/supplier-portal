@@ -1,0 +1,63 @@
+
+.notification{
+    padding: 0px 10px 0px 10px;
+    width: 250px;
+    .nodata{
+        font-size: 12px;
+    margin-top: 10px;
+    }
+    ::ng-deep .mat-expansion-panel-header{
+        padding: 0px !important;
+    }
+    .deleteall{
+        font-size: 10px;
+        cursor: pointer;
+    }
+    .time{
+        font-size: 10px;
+    }
+    h4{
+        font-size: 12px;
+        font-weight: 500;margin-bottom: 0px;
+    }
+    ::ng-deep .mat-expansion-panel-header-title, ::ng-deep .mat-expansion-panel-header-description{
+        font-size: 12px;
+        margin-right: 0px !important;
+    }
+    ::ng-deep .mat-expansion-panel-content{
+        font-size: 10px;
+        margin-right: 0px !important;
+    }
+    ::ng-deep .mat-expansion-panel-header-title {
+        overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    display: inline-block;}
+    
+    ::ng-deep .mat-expansion-panel-body{
+        padding: 0px;
+    }
+    ::ng-deep .mat-expansion-panel{
+        border: none;
+        box-shadow: none;
+    }
+    ::ng-deep .mat-expansion-panel:hover .mat-expansion-panel-header:hover{
+        background: none !important;
+    }
+    ::ng-deep .mat-expansion-panel-spacing{
+        margin-bottom: 3px !important;
+        margin-top: 0px !important;
+    }
+    ::ng-deep .mat-expansion-panel-header-description {
+        justify-content: flex-end;
+    }
+    ::ng-deep .mat-expansion-panel-header {
+        height: 35px;
+    }
+}
+.notification:hover{
+    background: none !important;
+}
+.unread{
+    font-weight: bold;
+}

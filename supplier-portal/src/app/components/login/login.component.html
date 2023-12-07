@@ -1,0 +1,67 @@
+<div fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="10px" class="example-card-container">
+  <img src="assets\logo-s.png" alt="" style="width: 140px;" />
+  <div style="font-weight: 600; color:#0575E6 ; font-size: 23px;">Hello Again!</div>
+  <div style="font-weight: 500;">Welcome back to Supplier Portal</div>
+  <mat-card class="example-card login-page ">
+    <form [formGroup]="profileForm" (ngSubmit)="submit()">
+      <!-- <mat-card-title>Sign In</mat-card-title> -->
+      <!-- <mat-card-subtitle>Dog Breed</mat-card-subtitle> -->
+      <mat-card-content>
+
+        <div fxLayout="column">
+          <mat-form-field appearance="outline">
+            <input matInput placeholder="Username/Email" formControlName="username">
+            <mat-hint>Eg:test</mat-hint>
+            <img matPrefix style="margin-top:-8px" src="assets\user-name.svg" alt="" />
+            <mat-error *ngIf="profileForm.get('username').errors?.['required']">
+              Username is required
+            </mat-error>
+            <mat-error *ngIf="profileForm.get('username').errors?.['maxlength']">
+              Only 10 charecters allowed
+            </mat-error>
+            <mat-error *ngIf="profileForm.get('username').errors?.['minlength']">
+              Min 3 needed.
+            </mat-error>
+          </mat-form-field>
+          <mat-form-field appearance="outline">
+            <!-- <mat-label>Password</mat-label> -->
+            <input matInput placeholder="Password" type="password" formControlName="password">
+            <img matPrefix style="margin-top:-8px" src="assets\password.svg" alt="" />
+            <mat-hint>Eg:test</mat-hint>
+            <!-- <mat-icon matSuffix>remove_red_eye
+
+
+
+
+
+
+            </mat-icon> -->
+            <mat-error *ngIf="profileForm.get('password').errors?.['required']">
+              Password is required
+            </mat-error> <mat-error *ngIf="profileForm.get('password').errors?.['maxlength']">
+              Only 10 charecters allowed
+            </mat-error>
+            <mat-error *ngIf="profileForm.get('password').errors?.['minlength']">
+              Min 3 needed.
+            </mat-error>
+          </mat-form-field>
+
+          <a href="javascript:;" (click)="forgot()" style="    color: #333;
+          font-size: 11px;">Forgot Password?</a>
+
+        </div>
+
+      </mat-card-content>
+      <mat-card-actions>
+        <div fxLayout="row" fxLayoutAlign="space-between center" class="button-act">
+          <button mat-raised-button color="primary" type="submit" class="log-btn">LOGIN</button>
+        </div>
+
+        <!-- <button mat-button>SHARE</button> -->
+      </mat-card-actions>
+      <div class="bottom-div">
+        <a href="javascript:;" (click)="signup()">New User?<span> Register</span> </a>
+      </div>
+    </form>
+  </mat-card>
+</div>

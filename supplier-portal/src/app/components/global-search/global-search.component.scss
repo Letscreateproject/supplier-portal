@@ -1,0 +1,23 @@
+.mat-parent{
+    padding: 0px 10px 0px 10px;
+    width:250px;
+    h4{
+        font-size: 12px;
+        font-weight: 500;margin-bottom: 0px;
+    }
+    .cust-table{
+        box-shadow: none;
+        width: 100%;
+        tr{
+            height: 35px;
+        }
+        td,th{
+            font-size: 12px;
+            padding-left: 0px;
+            padding-right: 0px;
+        }
+    }
+}
+.cust-parent{
+    width:200px;
+}

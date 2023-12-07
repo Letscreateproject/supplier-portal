@@ -1,0 +1,107 @@
+<div fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="10px" class="example-card-container">
+    <img src="assets\logo-s.png" alt="" style="width: 140px;" />
+    <div style="font-weight: 600; color:#0575E6 ; font-size: 23px;">Hello Again!</div>
+    <div style="font-weight: 500;">Welcome back to Supplier Portal</div>
+    <mat-card class="example-card signup-page ">
+        <form [formGroup]="profileForm" (ngSubmit)="submit()">
+            <mat-card-content>
+
+                <div fxLayout="column" fxLayoutAlign="center center">
+                    <div fxLayout="row" fxLayoutGap="10">
+                        <mat-form-field appearance="outline">
+                            <input matInput placeholder="Username/Email" formControlName="username">
+                            <img matPrefix style="margin-top:-8px;margin-right: 4px;" src="assets\user-name.svg"
+                                alt="" />
+                            <mat-error *ngIf="profileForm.get('username').errors?.['required']">
+                                This field is required
+                            </mat-error>
+                            <mat-error *ngIf="profileForm.get('username').errors?.['maxlength']">
+                                Only 10 charecters allowed
+                            </mat-error>
+                            <mat-error *ngIf="profileForm.get('username').errors?.['minlength']">
+                                Min 3 needed.
+                            </mat-error>
+                        </mat-form-field>
+
+                        <mat-form-field appearance="outline">
+                            <input matInput placeholder="Date Of Birth" type="date" formControlName="password">
+                            <img matPrefix style="margin-top:-8px" src="assets\images\svg\dateof-birth.svg" alt="" />
+                            <mat-error *ngIf="profileForm.get('password').errors?.['required']">
+                                This field is required
+                            </mat-error>
+                        </mat-form-field>
+                    </div>
+                    <div fxLayout="row" fxLayoutGap="10">
+                        <mat-form-field appearance="outline">
+                            <input matInput placeholder="Password" type="password" formControlName="password">
+                            <img matPrefix style="margin-top:-8px" src="assets\password.svg" alt="" />
+                            <mat-error *ngIf="profileForm.get('password').errors?.['required']">
+                                This field is required
+                            </mat-error>
+                        </mat-form-field>
+                        <mat-form-field appearance="outline">
+                            <input matInput placeholder="Re-Enter Password" type="password" formControlName="password">
+                            <img matPrefix style="margin-top:-8px" src="assets\password.svg" alt="" />
+                            <mat-error *ngIf="profileForm.get('password').errors?.['required']">
+                                This field is required
+                            </mat-error>
+                        </mat-form-field>
+                    </div>
+                    <div fxLayout="row" fxLayoutGap="10">
+                        <mat-form-field appearance="outline">
+                            <input matInput placeholder="First Name" type="text" formControlName="password">
+                            <img matPrefix style="margin-top:-8px" src="assets\images\svg\first-name.svg" alt="" />
+                            <mat-error *ngIf="profileForm.get('password').errors?.['required']">
+                                This field is required
+                            </mat-error>
+                        </mat-form-field>
+                        <mat-form-field appearance="outline">
+                            <input matInput placeholder="Last Name" type="text" formControlName="password">
+                            <img matPrefix style="margin-top:-8px" src="assets\images\svg\first-name.svg" alt="" />
+                            <mat-error *ngIf="profileForm.get('password').errors?.['required']">
+                                This field is required
+                            </mat-error>
+                        </mat-form-field>
+
+                    </div>
+                    <div fxLayout="row" fxLayoutGap="10">
+                        <mat-form-field appearance="outline">
+                            <input matInput placeholder="Email" type="text" formControlName="password">
+                            <img matPrefix style="margin-top:-8px" src="assets\images\svg\email.svg" alt="" />
+                            <mat-error *ngIf="profileForm.get('password').errors?.['required']">
+                                This field is required
+                            </mat-error>
+                        </mat-form-field>
+
+                        <mat-form-field appearance="outline">
+                            <input matInput placeholder="Phone" type="text" formControlName="password">
+                            <img matPrefix style="margin-top:-8px" src="assets\images\svg\phone.svg" alt="" />
+                            <mat-error *ngIf="profileForm.get('password').errors?.['required']">
+                                This field is required
+                            </mat-error>
+                        </mat-form-field>
+                    </div>
+
+                </div>
+                <div fxLayout="row" fxLayoutGap="10" fxLayoutAlign="flex-start center">
+
+                    <mat-checkbox class="example-margin">
+
+                    </mat-checkbox>
+                    <label class="terms">Yes, I agree to the <a href="javascript:;">Terms & Conditions</a></label>
+
+                </div>
+            </mat-card-content>
+            <mat-card-actions>
+                <div fxLayout="row" fxLayoutAlign="space-between center" class="button-act">
+                    <button mat-raised-button color="primary" type="submit" class="log-btn" fxFlex="100%">SIGN
+                        UP</button>
+                </div>
+            </mat-card-actions>
+            <div class="bottom-div">
+                <span>Already have an account ? <a (click)="signIn()"> Sign
+                        In</a></span>
+            </div>
+        </form>
+    </mat-card>
+</div>

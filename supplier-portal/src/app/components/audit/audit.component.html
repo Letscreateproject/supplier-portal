@@ -1,0 +1,9 @@
+<app-common-page-header [header]="'Document List'"></app-common-page-header>
+<app-table-list [isSortable]="true" [ViewIconAction]="true" [isPageable]="true" [data]="dataSource"
+    (rowAction)="buttonAction($event)" [columns]="columns"></app-table-list>
+<!-- [isFilterable]="true" (rowAction)="buttonAction($event)"  [rowActionIcon]="['edit','update']" [data]="dataSource" [isSortable]="true" [isPageable]="true" [columns]="columns" 
+[isSortable]="true"
+ [isPageable]="true" 
+ [rowActionIcon]="['edit','update']"
+ [isFilterable]="true"
+-->

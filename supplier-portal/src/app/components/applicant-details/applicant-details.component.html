@@ -1,0 +1,86 @@
+<app-common-page-header [header]="'Supplier Details'"></app-common-page-header>
+<h4>Company Details</h4>
+<mat-card class="example-card">
+    <mat-card-content>
+        <div class="main-row common-struc">
+            <div class="form-group ">
+                <label>Supplier ID </label>
+                <div class="applicant-details-text">
+                    {{company.id}}
+                </div>
+            </div>
+            <div class="form-group ">
+                <label>Company Name </label>
+                <div class="applicant-details-text">
+                    {{company.companyName}}
+                </div>
+            </div>
+            <div class="form-group ">
+                <label>Company Address </label>
+                <div class="applicant-details-text">
+                    {{company.address}}
+                </div>
+            </div>
+            <div class="form-group ">
+                <label> GST ID</label>
+                <div class="applicant-details-text">
+                    {{company.gst}}
+                </div>
+            </div>
+
+        </div>
+
+    </mat-card-content>
+
+
+
+</mat-card>
+<h4>Billing Details</h4>
+<div fxLayout="row" fxLayoutGap="10px">
+    <mat-card class="example-card" fxFlex="50%">
+
+        <mat-card-content>
+            <div class="main-row-sub common-struc">
+                <div class="form-group ">
+                    <label>Company Name </label>
+                    <div class="applicant-details-text">
+                        {{company.id}}
+                    </div>
+                </div>
+                <div class="form-group ">
+                    <label>Billing Address </label>
+                    <div class="applicant-details-text">
+                        {{company.address}}
+                    </div>
+                </div>
+
+            </div>
+
+        </mat-card-content>
+
+
+    </mat-card>
+    <mat-card class="example-card" fxFlex="50%">
+
+        <mat-card-content>
+            <div class="main-row-sub common-struc">
+                <div class="form-group ">
+                    <label>Company Name </label>
+                    <div class="applicant-details-text">
+                        {{company.id}}
+                    </div>
+                </div>
+                <div class="form-group ">
+                    <label>Billing Address </label>
+                    <div class="applicant-details-text">
+                        {{company.address}}
+                    </div>
+                </div>
+
+            </div>
+
+        </mat-card-content>
+
+
+    </mat-card>
+</div>

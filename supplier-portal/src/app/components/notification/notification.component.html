@@ -1,0 +1,41 @@
+<mat-icon matBadge="{{notificationCount}}" matBadgeColor="warn" style="cursor: pointer;"
+    [matMenuTriggerFor]="notification">notifications_none</mat-icon>
+
+
+<mat-menu #notification="matMenu">
+
+
+    <div (click)="$event.stopPropagation();" class="notification">
+        <div fxLayout="row" fxLayoutAlign="space-between center">
+            <h4>Notifications</h4> <a href="javascript:;" class="deleteall" (click)="deleteAll()">Delete All</a>
+        </div>
+        <mat-divider></mat-divider>
+        <mat-accordion class="example-headers-align" [multi]="false">
+            <div *ngIf="notificationList.length === 0" class="nodata"> There are no notifications</div>
+            <ng-container *ngFor="let noti of notificationList">
+                <mat-expansion-panel hideToggle class="mat-expansion-panel-no-ripple">
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>
+                            <div class="" [ngClass]="noti.isRead? '' : 'unread'">{{noti.subject}}</div>
+
+                        </mat-panel-title>
+                        <mat-panel-description>
+                            <div class="time"> {{noti.time}} <span
+                                    (click)="$event.stopPropagation();deleteNotification(noti)">X</span></div>
+                        </mat-panel-description>
+
+                    </mat-expansion-panel-header>
+
+                    <div>{{noti.body}}</div>
+
+                </mat-expansion-panel>
+                <mat-divider></mat-divider>
+            </ng-container>
+
+
+        </mat-accordion>
+    </div>
+
+
+
+</mat-menu>

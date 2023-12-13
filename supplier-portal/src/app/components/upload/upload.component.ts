@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
+import { Router } from '@angular/router';
 import { CommonService } from 'src/app/_services/common/common.service';
 import { Constants } from 'src/app/_services/constants';
 import { NotifierService } from 'src/app/_services/notifier/notifier.service';
@@ -12,7 +13,8 @@ export class UploadComponent {
   files: any[] = [];
   constructor(
     private notifer: NotifierService,
-    private commonSvc: CommonService
+    private commonSvc: CommonService,
+    private router: Router
   ) {}
   /**
    * on file drop handler
@@ -99,6 +101,7 @@ export class UploadComponent {
       'File Uploaded Successfully',
       Constants.SUCCESS_NOTIFIER
     );
+    this.router.navigate(['/home/pdfViewer']);
     // this.commonSvc.uploadFile(payload).subscribe({
     //   next: (data: any) => {
     //     //success

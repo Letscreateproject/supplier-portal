@@ -1,8 +1,8 @@
-<app-common-page-header [header]="'Supplier Details'"></app-common-page-header>
+<app-common-page-header [header]="'Invoice Details'"></app-common-page-header>
 <div fxLayout="column" fxLayoutGap="10px">
   <div fxLayout="row" fxLayoutGap="10px" fxLayoutAlign="flex-end"><button mat-raised-button color="primary"
-      type="button" class="log-btn" (click)="submit()">Validate & Submit</button>
-    <button mat-raised-button color="primary" type="button" class="log-btn" (click)="submit()">Submit Any Way</button>
+      type="button" class="log-btn" (click)="validate()">Validate</button>
+    <button mat-raised-button color="primary" type="button" class="log-btn" [disabled]="!isValid" (click)="submit()">Submit</button>
   </div>
   <div fxLayout="row" fxLayoutGap="10px">
     <mat-card class="example-card" fxFlex="50%">
@@ -11,11 +11,12 @@
         <div class="main-row-sub common-struc">
 
           <form [formGroup]="profileForm">
-            <div formArrayName="dynamicFields" style="display: grid;grid-template-columns: auto auto;">
+            <div formArrayName="dynamicFields" class="col-md-12">
               <div *ngFor="let field of dynamicFields.controls; let i = index">
                 <div>
 
                   <label>{{ lbls[i].fieldName }}</label>
+                  <span (click)="goToPage(i+1)"><img src="assets/ico-1.svg" alt="" class="img-styl" /></span> 
 
                   <div class="applicant-details-text">
 
@@ -24,7 +25,7 @@
 
 
 
-                    <mat-form-field appearance="outline" style="width: 95%;">
+                    <mat-form-field appearance="outline" style="width: 100%;" [class.invalid]="lbls[i].isValid">
                       <input matInput placeholder="" formControlName="email" [value]="lbls[i].fieldValue">
                     </mat-form-field>
                   </div>
@@ -74,7 +75,7 @@
 
       <mat-card-content>
         <div class="main-row-sub common-struc">
-          <pdf-viewer [src]="pdfSrc" [rotation]="0" [original-size]="false" [show-all]="true" [fit-to-page]="true"
+          <pdf-viewer #pdfViewer [src]="pdfSrc" [rotation]="0" [original-size]="false" [show-all]="true" [fit-to-page]="true"
             [zoom]="1" [zoom-scale]="'page-width'" [stick-to-page]="false" [render-text]="true"
             [external-link-target]="'blank'" [autoresize]="true" [show-borders]="false"
             style="width: 100%; height: 400px;"></pdf-viewer>

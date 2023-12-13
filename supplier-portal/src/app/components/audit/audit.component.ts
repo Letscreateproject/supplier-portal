@@ -49,7 +49,10 @@ export class AuditComponent {
       field: 'fileName',
       header: 'File Name',
     },
-
+    {
+      field: 'status',
+      header: 'Status',
+    },
     {
       field: 'viewIconAction',
       header: 'View',

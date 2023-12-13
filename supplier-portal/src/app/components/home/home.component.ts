@@ -15,14 +15,14 @@ export class HomeComponent implements OnInit {
   menuItems: any = [
     {
       id: 1,
-      menuItemDisplayName: 'Upload Document',
+      menuItemDisplayName: 'New Invoice',
       menuItemIcon: 'assets/ico-1.svg',
       menuItemUrl: 'process',
       menuItemCode: 'process',
     },
     {
       id: 1,
-      menuItemDisplayName: 'Document List',
+      menuItemDisplayName: 'Invoice List',
       menuItemIcon: 'assets/ico-1.svg',
       menuItemUrl: 'documentlist',
       menuItemCode: 'documentlist',

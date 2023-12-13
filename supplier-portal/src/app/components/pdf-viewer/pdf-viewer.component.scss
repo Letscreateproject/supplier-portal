@@ -14,3 +14,13 @@ input[type="file"] {
 .text-centre{
     text-align: center;
 }
+
+.img-styl{
+    width: 14px;
+    margin-left: 6px;
+    cursor: pointer;
+ }
+
+ ::ng-deep .invalid.mat-form-field-appearance-outline .mat-form-field-outline {
+    color:  red !important; 
+  }

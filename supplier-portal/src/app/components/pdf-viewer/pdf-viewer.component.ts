@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { FormGroup, FormBuilder, FormArray, Validators } from '@angular/forms';
 import { CommonService } from 'src/app/_services/common/common.service';
 import { DomSanitizer } from '@angular/platform-browser';
@@ -17,6 +17,8 @@ export class PdfViewerComponent implements OnInit {
   show: any = false;
   profileForm: any = FormGroup;
   lbls: any = [];
+  @ViewChild('pdfViewer') pdfViewer: any;
+  isValid: boolean = false;
   constructor(
     private common: CommonService,
     private fb: FormBuilder,
@@ -94,5 +96,17 @@ export class PdfViewerComponent implements OnInit {
     //   };
     //   reader.readAsArrayBuffer($img.files[0]);
     // }
+  }
+
+  //method to validate dynamicFields
+  validate(){
+    this.lbls[1]['isValid'] = true;   //this.isValidate = true
+  }
+
+  //go to a page
+  goToPage(pageNumber: number) {
+    if (this.pdfViewer) {
+      this.pdfViewer.currentPageNumber = pageNumber;
+    }
   }
 }

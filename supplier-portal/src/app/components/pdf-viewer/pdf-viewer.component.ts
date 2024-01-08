@@ -39,7 +39,7 @@ export class PdfViewerComponent implements OnInit {
     field = this.fb.group({
       email: [''],
     });
-    debugger;
+ 
     this.dynamicFields.push(field);
   }
 

@@ -10,12 +10,15 @@
     max-width: 400px !important;
     width: 400px  !important;
     min-width: 400px !important;
+    position: fixed;
+    bottom: 0;
+    right: 0;
     // margin-left: 1120px !important;
   }
   .chat-card{
     // padding: 0px;
    ::ng-deep .mat-card-content {    
-        max-height: 350px;
+        max-height: 400px;
         overflow-y: auto;
     }
     ::ng-deep .mat-card-title{

@@ -101,6 +101,11 @@ export class PdfViewerComponent implements OnInit {
   //method to validate dynamicFields
   validate(){
     this.lbls[1]['isValid'] = true;   //this.isValidate = true
+    this.lbls[1]['Count'] = this.lbls[1]['Count'] ? this.lbls[1]['Count'] + 1 : 1;   
+    if(this.lbls[1]['Count'] > 1){
+      this.lbls[1]['isValid'] = false;  
+      this.isValid = true;
+    }
   }
 
   //go to a page

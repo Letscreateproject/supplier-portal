@@ -10,6 +10,7 @@ import { Chat } from 'src/app/models/chat';
 })
 export class ChatComponent implements OnInit {
   @ViewChild('bottomsheet') bottomsheet!: TemplateRef<any>;
+  @ViewChild('fileInput') fileInput: any;
   chatList: Chat[] = [];
   profileForm: any = FormGroup;
   constructor(private _bottomSheet: MatBottomSheet) {}
@@ -74,4 +75,18 @@ export class ChatComponent implements OnInit {
       this.profileForm.markAsUntouched();
     }
   }
+
+    //  method to handle file selection
+    onFileSelected(event: any): void {
+      const file = event.target.files[0];
+      if (file) {
+        this.chatList.push({
+          chatBody: file.name,
+          chatDir: 'to',
+          chatTime: '4:50am',
+        });
+        // Handle the file here (you can upload it to a server, etc.)
+        console.log('Selected file:', file);
+      }
+    }
 }

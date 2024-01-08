@@ -86,6 +86,10 @@ export class AuditComponent {
   getDocList() {
     this.commonSvc.getPdfList().subscribe((data: any) => {
       console.log(data);
+      if(data){
+        data[0]['status']='InProgress'
+      }
+
       this.dataSource = data;
     });
 

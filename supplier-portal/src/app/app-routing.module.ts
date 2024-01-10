@@ -39,7 +39,7 @@ const routes: Routes = [
       //   component : DownloadComponent
       // },
       {
-        path: 'process',
+        path: 'newinvoice',
         component: UploadComponent,
       },
       {
@@ -59,7 +59,7 @@ const routes: Routes = [
         component: UserformComponent,
       },
       {
-        path: 'documentlist',
+        path: 'invoicelist',
         component: AuditComponent,
       },
       {
@@ -67,7 +67,7 @@ const routes: Routes = [
         component: ShoppinglistComponent,
       },
       {
-        path: 'pdfViewer',
+        path: 'invoicedetails',
         component: PdfViewerComponent,
       },
     ],

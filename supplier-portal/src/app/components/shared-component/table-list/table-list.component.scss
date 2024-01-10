@@ -47,3 +47,11 @@ section {
   justify-content: center;
   width: 120px;
 }
+
+::ng-deep .demo-table .mat-header-cell {
+ font-weight: 500 !important;
+}
+
+.custom-icon{
+  font-size: 18px !important;
+}

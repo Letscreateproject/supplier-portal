@@ -77,7 +77,7 @@ export class AuditComponent {
    * @param {any} e - action event
    */
   buttonAction(e: any) {
-    this.router.navigate(['/home/pdfViewer']);
+    this.router.navigate(['/home/invoicedetails']);
   }
   /**
    * called from oninit to get the list of documents

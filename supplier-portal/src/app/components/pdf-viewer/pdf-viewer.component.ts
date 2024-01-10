@@ -77,11 +77,11 @@ export class PdfViewerComponent implements OnInit {
   }
   submit() {
     this.notifer.notify(
-      'File Uploaded Successfully',
+      'File Submitted Successfully',
       Constants.SUCCESS_NOTIFIER
     );
     setTimeout(() => {
-      this.router.navigate(['/home/documentlist']);
+      this.router.navigate(['/home/invoicelist']);
     }, 2000);
   }
   onFileSelected() {

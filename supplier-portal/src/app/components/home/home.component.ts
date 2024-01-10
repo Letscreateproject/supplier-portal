@@ -17,15 +17,15 @@ export class HomeComponent implements OnInit {
       id: 1,
       menuItemDisplayName: 'New Invoice',
       menuItemIcon: 'assets/ico-1.svg',
-      menuItemUrl: 'process',
-      menuItemCode: 'process',
+      menuItemUrl: 'newinvoice',
+      menuItemCode: 'newinvoice',
     },
     {
       id: 1,
       menuItemDisplayName: 'Invoice List',
       menuItemIcon: 'assets/ico-1.svg',
-      menuItemUrl: 'documentlist',
-      menuItemCode: 'documentlist',
+      menuItemUrl: 'invoicelist',
+      menuItemCode: 'invoicelist',
     },
   ];
   @ViewChild('sidenav') sidenav: MatSidenav | undefined;

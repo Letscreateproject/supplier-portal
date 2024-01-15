@@ -50,7 +50,7 @@ export class AuditComponent {
       header: 'File Name',
     },
     {
-      field: 'status',
+      field: 'statusName',
       header: 'Status',
     },
     {
@@ -77,7 +77,7 @@ export class AuditComponent {
    * @param {any} e - action event
    */
   buttonAction(e: any) {
-    this.router.navigate(['/home/invoicedetails']);
+    this.router.navigate(['/home/invoicedetails'],{state:e});
   }
   /**
    * called from oninit to get the list of documents
@@ -86,24 +86,24 @@ export class AuditComponent {
   getDocList() {
     this.commonSvc.getPdfList().subscribe((data: any) => {
       console.log(data);
-      if(data){
-        data[0]['status']='InProgress'
-      }
+      // if(data){
+      //   data[0]['status']='InProgress'
+      // }
 
       this.dataSource = data;
     });
 
-    this.dataSource = [
-      {
-        position: 1,
-        voucherFileName: 'Voucher1.xlsx',
-        textbox: 'textbox',
-        action: 'action',
-        viewIconAction: 'viewIconAction',
-        downloadIconAction: 'downloadIconAction',
-        status: 'status',
-      },
-    ];
+    // this.dataSource = [
+    //   {
+    //     position: 1,
+    //     voucherFileName: 'Voucher1.xlsx',
+    //     textbox: 'textbox',
+    //     action: 'action',
+    //     viewIconAction: 'viewIconAction',
+    //     downloadIconAction: 'downloadIconAction',
+    //     status: 'status',
+    //   },
+    // ];
   }
 
   /**

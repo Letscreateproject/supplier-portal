@@ -14,6 +14,7 @@ declare var $: any;
 })
 export class PdfViewerComponent implements OnInit {
   pdfSrc: any;
+  data:any;
   show: any = false;
   profileForm: any = FormGroup;
   lbls: any = [];
@@ -50,6 +51,7 @@ export class PdfViewerComponent implements OnInit {
     this.dynamicFields.removeAt(index);
   }
   ngOnInit(): void {
+    this.data=history?.state.statusName;
     this.profileForm = this.fb.group({
       dynamicFields: this.fb.array([]),
     });
@@ -109,9 +111,19 @@ export class PdfViewerComponent implements OnInit {
   }
 
   //go to a page
-  goToPage(pageNumber: number) {
+  goToPage(searchString :any, pageNumber: number) {
     if (this.pdfViewer) {
+      const pdfViewer = this.pdfViewer.pdfViewer;
+      pdfViewer.findController.executeCommand('find', {
+        query: searchString,
+        caseSensitive: false,
+        highlightAll: true,
+      });
+  
+      const pageNumber = pdfViewer.findController.pageMatches[0]?.dest.pageIndex + 1;
+      console.log(`String found on page ${pageNumber}`);
+    }
       this.pdfViewer.currentPageNumber = pageNumber;
     }
   }
-}
+

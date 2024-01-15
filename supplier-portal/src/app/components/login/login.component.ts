@@ -41,7 +41,7 @@ export class LoginComponent implements OnInit {
         this.profileForm.controls['username'].value === 'test' &&
         this.profileForm.controls['password'].value === 'test'
       ) {
-        this.router.navigate(['/home/documentlist']);
+        this.router.navigate(['/home']);
       } else {
         this.snackbarService.showSnackbar(
           'Wrong Username/Password',

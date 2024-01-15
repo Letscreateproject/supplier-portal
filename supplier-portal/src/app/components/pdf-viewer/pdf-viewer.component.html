@@ -1,6 +1,6 @@
 <app-common-page-header [header]="'Invoice Details'"></app-common-page-header>
 <div fxLayout="column" fxLayoutGap="10px">
-  <div fxLayout="row" fxLayoutGap="10px" fxLayoutAlign="flex-end">
+  <div fxLayout="row" fxLayoutGap="10px" fxLayoutAlign="flex-end" *ngIf="data=='New'">
     <button mat-raised-button color="primary"
       type="button" class="log-btn" (click)="validate()">Validate</button>
     <button mat-raised-button color="primary"
@@ -19,7 +19,7 @@
                 <div>
 
                   <label>{{ lbls[i].fieldName }}</label>
-                  <span (click)="goToPage(i+1)"><img src="assets/double-arrow.svg" alt="" class="img-styl" /></span> 
+                  <span (click)="goToPage(lbls[i].fieldName,i+1)"><img src="assets/double-arrow.svg" alt="" class="img-styl" /></span> 
                   <!-- <span (click)="goToPage(i+1)"><img src="assets/iconmonstr-arrow-right-thin.svg" alt="" class="img-styl" /></span>  -->
 
                   <div class="applicant-details-text">
